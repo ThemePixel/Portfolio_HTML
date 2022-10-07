@@ -16,7 +16,6 @@ a {
 }
 .page {
   margin-top: 76px;
-  width: 900px;
 }
 .page__text p {
   margin: 0px 0px 20px 0px;
@@ -47,6 +46,7 @@ a {
 .footer__container {
   max-width: 1140px;
   color: #939393;
+  margin: 0 auto;
 }
 .header {
   position: fixed;
