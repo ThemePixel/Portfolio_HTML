@@ -155,6 +155,31 @@ footer .footer__container {
   padding-top: 50px;
   display: flex;
 }
+footer .footer__container p {
+  color: #737373;
+}
+footer .footer__container .footer-heading {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+footer .footer__container .Aboutus__col {
+  width: 33.33333%;
+}
+footer .footer__container .nav_col {
+  width: 33.33333%;
+  display: flex;
+}
+footer .footer__container .nav_col .nav__section__one {
+  width: 50%;
+}
+footer .footer__container .nav_col .nav__section__two {
+  width: 50%;
+}
+footer .footer__container .Subscribe__col {
+  width: 33.33333%;
+}
 footer .copyright__section {
   padding-top: 50px;
   padding-bottom: 50px;
