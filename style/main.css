@@ -11,11 +11,35 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  width: 370px;
+  width: 900px;
   margin: 0 auto;
 }
-.wrapper .hoome4 {
-  margin-top: 260px;
+.page {
+  margin-top: 76px;
+  width: 900px;
+}
+.page__text p {
+  margin: 0px 0px 20px 0px;
+}
+.page__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+.page__title {
+  font-size: 40px;
+  margin: 0px 0px 20px 0px;
+}
+.page__section1 {
+  background-color: #3b7a7a;
+}
+.page__section2 {
+  background-color: #5b439b;
+}
+.page__section3 {
+  background-color: #629c65;
+}
+.page__section4 {
+  background-color: #e2b052;
 }
 .header {
   position: fixed;
@@ -23,7 +47,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: red;
+  background-color: #815a5a;
 }
 .header .header__container {
   max-width: 1200px;
