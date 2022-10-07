@@ -41,6 +41,13 @@ a {
 .page__section4 {
   background-color: #e2b052;
 }
+.footer {
+  background: #333333;
+}
+.footer__container {
+  max-width: 1140px;
+  color: #939393;
+}
 .header {
   position: fixed;
   top: 0;
