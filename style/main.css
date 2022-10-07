@@ -151,6 +151,19 @@ body._mobile .menu__list > li._active .menu__sub-list {
   transform: translate(0px, 0px);
   pointer-events: all;
 }
+footer .footer__container {
+  padding-top: 50px;
+  display: flex;
+}
+footer .copyright__section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (min-width: 1px) {
   .menu__list {
     display: flex;
