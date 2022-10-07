@@ -65,14 +65,11 @@ a {
   justify-content: space-between;
   min-height: 70px;
 }
-.header .header__container .header__logo {
+.header .header__container .header__logo .logo__text {
+  font-size: 41px;
   position: relative;
   z-index: 8;
-  font-size: 48px;
-  background-color: aliceblue;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  color: white;
 }
 .header .header__container .menu__body .menu__list li {
   position: relative;
