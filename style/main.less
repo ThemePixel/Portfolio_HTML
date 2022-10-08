@@ -9,6 +9,7 @@ html{
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
 
@@ -203,6 +204,19 @@ body._pc .menu__list > li:hover .menu__sub-list{
 body._mobile .menu__list > li._active .menu__arrow{
     transform: rotate(-180deg);
 }
+
+
+.menu__arrowfalseblack{
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0px 0px 0px 10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(0, 0, 0);
+    transition: transform 0.3s ease 0s;
+}
+
 .menu__arrowfalse{
     display: block;
     width: 0;
@@ -414,7 +428,7 @@ footer{
 
 
 .swiper-container{
-    background-color: #E2E2E2;
+    height: 199px;
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -427,8 +441,9 @@ footer{
 
   body .swiper-slide {
     width: auto !important;
-    background-color: #E2E2E2;
+    
     margin-right: 51px;
+    border-radius: 50%;
   }
   .menu__sub-listt {
     transform: translate(0px, 20%);
@@ -442,6 +457,7 @@ footer{
   }
   .menu__sub-listt li {
     width: 200px;
+    margin-top: 10px;
   }
   .swiper-wrapper > li:hover .menu__sub-listt {
     opacity: 1;
@@ -461,25 +477,25 @@ footer{
     justify-content: center;
   }
   .swiper-slide-active a {
-    background: #F1F1F1;
-    border-radius: 34px;
+    background: #000000;
+    border-radius: 34%;
     line-height: 31px;
+    color: rgb(255, 255, 255);
   }
   body .swiper-slide-active .menu__sub-linkk {
-    background: #8a6262;
-    border-radius: 0%;
+    background: #ffffff;
+    border-radius: 0%; 
     line-height: 0px;
+    color: black;
   }
-  .menu__sub-linkk {
-    background: #8a6262;
-  }
+ 
   body .swiper-wrapper {
     margin-left: -453px;
     height: 38px;
   }
   body .swiper-button-next {
-    right: 281px;
-    margin-top: calc(207px - (var(--swiper-navigation-size)/2));
+    right: 241px;
+    margin-top: calc(177px - (var(--swiper-navigation-size)/2));
     color: #000;
     font-size: 7px;
     
@@ -496,7 +512,7 @@ footer{
   body .swiper-button-prev {
     left: 351px;
     font-size: 7px;
-    margin-top: calc(221px - (var(--swiper-navigation-size)/2));
+    margin-top: calc(187px - (var(--swiper-navigation-size)/2));
 }
   }
 
