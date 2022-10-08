@@ -14,13 +14,57 @@ a {
   width: 1140px;
   margin: 0 auto;
 }
+.div__aaa {
+  margin-top: 60px;
+}
+:root {
+  --bg-color: #fad304;
+}
+.aaa {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 20px 40px;
+  position: relative;
+  cursor: pointer;
+}
+.aaa:hover {
+  color: #fff;
+}
+.aaa::before,
+.aaa::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, filter 0.5s ease;
+}
+.aaa::after {
+  z-index: 1;
+  transform: translate(4px, -4px);
+  background: linear-gradient(to right, black 0 100%) no-repeat top left / calc(100% - 30px) 2px, /*  bottom line    */ linear-gradient(to right, black 0 100%) no-repeat bottom right / calc(100% - 30px) 2px, /*   right angle   */ linear-gradient(45deg, transparent calc(50% - 1px), black calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)) no-repeat right top / 31px 31px, /*     left angle */ linear-gradient(45deg, transparent calc(50% - 1px), black calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)) no-repeat left bottom / 31px 31px, /*     left pipe */ linear-gradient(to right, black 0 100%) no-repeat 0 0 / 2px calc(100% - 30px), /*     right pipe */ linear-gradient(to right, black 0 100%) no-repeat bottom right / 2px calc(100% - 30px);
+}
+.aaa::before {
+  z-index: -1;
+  transform: translate(-4px, 4px);
+  background: linear-gradient(to right, var(--bg-color) 0 100%) no-repeat top left / calc(100% - 30px) calc(100% - 30px), /*  bottom line    */ linear-gradient(to right, var(--bg-color) 0 100%) no-repeat bottom right / calc(100% - 30px) calc(100% - 30px), /*   right angle   */ linear-gradient(45deg, var(--bg-color) calc(50% - 1px), var(--bg-color) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)) no-repeat right top / 31px 31px, /*     left angle */ linear-gradient(45deg, transparent calc(50% - 1px), var(--bg-color) calc(50% - 1px) calc(50% + 1px), var(--bg-color) calc(50% + 1px)) no-repeat left bottom / 31px 31px, /*     left pipe */ linear-gradient(to right, var(--bg-color) 0 100%) no-repeat 0 0 / 2px calc(100% - 30px), /*     right pipe */ linear-gradient(to right, var(--bg-color) 0 100%) no-repeat bottom right / 2px calc(100% - 30px);
+}
+.aaa:hover::before,
+.aaa:hover::after {
+  transform: translate(0);
+  filter: brightness(0);
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #815a5a;
+  background-color: #9e2d8f;
 }
 .header .header__container {
   max-width: 1200px;
@@ -118,14 +162,14 @@ body._mobile .menu__list > li._active .menu__sub-list {
   pointer-events: all;
 }
 .swiper__section {
-  margin-top: 100px;
+  margin-top: -25px;
 }
 .swiper__section .swiper_section {
   width: 1140px;
   margin: 0 auto;
 }
 .swiper__section .swiper_section .swiper__boxes {
-  margin-bottom: 60px;
+  margin-bottom: 18px;
   margin-top: 160px;
   display: flex;
 }
@@ -287,7 +331,7 @@ footer .slide_box .slide_box_div {
   }
   body .swiper-button-next {
     right: 281px;
-    margin-top: calc(195px - (var(--swiper-navigation-size)/2));
+    margin-top: calc(207px - (var(--swiper-navigation-size)/2));
     color: #000;
     font-size: 7px;
   }
@@ -302,7 +346,7 @@ footer .slide_box .slide_box_div {
   body .swiper-button-prev {
     left: 351px;
     font-size: 7px;
-    margin-top: calc(207px - (var(--swiper-navigation-size)/2));
+    margin-top: calc(221px - (var(--swiper-navigation-size)/2));
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -404,6 +448,9 @@ footer .slide_box .slide_box_div {
   }
   .swiper_box {
     margin-top: -65px;
+  }
+  .swiper-button-next::after {
+    background: linear-gradient(to right, var(--yt-spec-brand-background-primary) 20%, rgba(255, 255, 255, 0) 80%);
   }
   .footer__container {
     flex-direction: column;
