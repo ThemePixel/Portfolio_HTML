@@ -341,10 +341,11 @@ footer .slide_box .slide_box_div {
     height: 38px;
   }
   body .swiper-button-next {
-    right: 241px;
-    margin-top: calc(177px - (var(--swiper-navigation-size)/2));
+    right: 255px;
+    margin-top: calc(482px - (var(--swiper-navigation-size)/2));
     color: #000;
     font-size: 7px;
+    top: 0;
   }
   body .swiper-button-next:after {
     font-size: 19px;
@@ -357,7 +358,8 @@ footer .slide_box .slide_box_div {
   body .swiper-button-prev {
     left: 351px;
     font-size: 7px;
-    margin-top: calc(187px - (var(--swiper-navigation-size)/2));
+    margin-top: calc(496px - (var(--swiper-navigation-size)/2));
+    top: 0;
   }
 }
 @media only screen and (max-width: 1000px) {
