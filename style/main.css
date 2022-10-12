@@ -340,6 +340,15 @@ footer .slide_box .slide_box_div {
   }
 }
 @media only screen and (max-width: 1000px) {
+  .inverted .menu__icon::before {
+    background-color: #000;
+  }
+  .inverted .menu__icon span {
+    background-color: #000;
+  }
+  .inverted .menu__icon::after {
+    background-color: #000;
+  }
   body .header .header__container .menu__body .menu__list li .menu__sub-list {
     position: relative;
     flex: 1 1 100%;
@@ -410,7 +419,6 @@ footer .slide_box .slide_box_div {
     top: 0;
     left: 0;
     height: 70px;
-    background: #222831;
     z-index: 2;
   }
   .menu__body .menu__list {

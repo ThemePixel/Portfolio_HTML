@@ -1,3 +1,5 @@
+
+
 @import "reset.css";
 
 @1: #222831;
@@ -173,13 +175,7 @@ body .inverted {
                     margin: 0px 0px 0px 60px;
                     display: flex;
                     align-items: center;
-                    &:hover{
-                        
-                            
-                        
-                        //text-decoration: underline;
-                       // text-underline-offset: 5px;
-                    }
+                    
                     .menu__link{
                         color: white; 
                         font-size: 18px;
@@ -504,6 +500,21 @@ footer{
 
 @media only screen and (max-width: 1000px){
    
+   // .inverted .menu__icon span, .menu__icon::before, .menu__icon::after {
+   //         background-color: #000;
+   // }
+    
+   
+   
+   .inverted .menu__icon::before{
+    background-color: #000;
+   }
+   .inverted .menu__icon span{
+    background-color: #000;
+   }
+   .inverted .menu__icon::after{
+    background-color: #000;
+   }
 
 
 
@@ -584,7 +595,7 @@ body .header .header__container .menu__body .menu__list > li._active .menu__sub-
         top: 0;
         left: 0;
         height: 70px;
-        background: @1;
+        
         z-index: 2;
         }
     .menu__list{
@@ -638,8 +649,6 @@ align-items: center;
             
         
     
-
-
 
 
 
