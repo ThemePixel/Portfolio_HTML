@@ -355,6 +355,9 @@ footer .slide_box .slide_box_div {
   ._lock .header.inverted .header__container .menu__body .menu__list li .menu__link {
     color: #fff;
   }
+  ._lock .inverted .menu__arrowfalse {
+    border-top: 10px solid #f7f7f7;
+  }
   .inverted .menu__icon::before {
     background-color: #000;
   }
