@@ -138,9 +138,13 @@ body .inverted {
 
 
 
+  body .inverted .header__container{
+    height: 5rem;
 
+}
 
 .header{
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -148,13 +152,15 @@ body .inverted {
     z-index: 10;
     background-color: @1;
     .header__container{
+        transition: height .5s ease;
+        border-bottom: 2px solid rgba(255,255,255,.05);
         max-width: 1200px;
         margin: 0px auto;
         display: flex; 
         padding: 0px 30px;
         align-items: center;
         justify-content: space-between;
-        min-height: 70px;
+        height: 8rem;
         .header__logo{
             .logo__text{
                 font-size: 41px;

@@ -91,6 +91,9 @@ body .inverted {
 .header.inverted .header__container .menu__body .menu__list li .menu__link {
   color: #000;
 }
+body .inverted .header__container {
+  height: 5rem;
+}
 .header {
   position: fixed;
   top: 0;
@@ -100,13 +103,15 @@ body .inverted {
   background-color: #222831;
 }
 .header .header__container {
+  transition: height 0.5s ease;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
   max-width: 1200px;
   margin: 0px auto;
   display: flex;
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
-  min-height: 70px;
+  height: 8rem;
 }
 .header .header__container .header__logo .logo__text {
   font-size: 41px;
