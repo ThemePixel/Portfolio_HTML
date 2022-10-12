@@ -76,7 +76,7 @@ a {
   transform: scaleX(1);
 }
 .inverted .menu__link::after {
-  background-color: #000;
+  background-color: #000000;
 }
 .inverted .menu__arrowfalse {
   border-top: 10px solid #000000;
@@ -340,6 +340,9 @@ footer .slide_box .slide_box_div {
   }
 }
 @media only screen and (max-width: 1000px) {
+  ._lock .menu__body::before {
+    background-color: #00ADB5;
+  }
   ._lock .header.inverted .header__container .header__logo .logo__text {
     color: #fff;
   }

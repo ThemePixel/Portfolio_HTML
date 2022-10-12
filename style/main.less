@@ -110,7 +110,7 @@ a{
  /////////////////////////////////transform: scaleX(1);///////////////////////////////////
 
  .inverted .menu__link::after{
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
  }
  
  .inverted .menu__arrowfalse {
@@ -131,7 +131,7 @@ body .inverted {
   .header.inverted .header__container .menu__body .menu__list li .menu__link {
     color: #000;
   }
-
+  
 
 ////////////////////////////////////////header inverted///////////////////////////////////////////////
 
@@ -500,13 +500,17 @@ footer{
 
 @media only screen and (max-width: 1000px){
    
-    
+    ._lock .menu__body::before{
+        background-color: #00ADB5; 
+    }
+
+
     ._lock .header.inverted .header__container .header__logo .logo__text{
         color: #fff;
     }
 
     ._lock .inverted .menu__icon::before{
-        background-color: #fff;
+        background-color:  #fff;
        }
        ._lock .inverted .menu__icon span{
         background-color: #fff;
@@ -520,8 +524,8 @@ footer{
    
 
        ._lock .inverted .menu__arrowfalse {
-    border-top: 10px solid #f7f7f7;
-}
+        border-top: 10px solid #f7f7f7;
+       }
    
    .inverted .menu__icon::before{
     background-color: #000;
