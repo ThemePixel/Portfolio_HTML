@@ -63,7 +63,7 @@ svg .draw {
 }
 .menu__link__footer::after {
   content: '';
-  width: 100%;
+  width: 120px;
   height: 2px;
   background-color: black;
   position: absolute;
