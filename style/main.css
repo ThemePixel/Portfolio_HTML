@@ -25,9 +25,86 @@ a {
   width: 1140px;
   margin: 0 auto;
 }
+._mobile .header__logo {
+  display: flex;
+}
+svg {
+  width: 125px;
+  margin-left: 12px;
+  position: relative;
+  top: 50%;
+  margin-top: -3px;
+  left: 0;
+}
+._mobile svg {
+  position: relative;
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+._lock svg {
+  z-index: 88;
+}
+svg .draw {
+  stroke: black;
+  stroke-width: 2px;
+  fill: transparent;
+  animation: animate 5s forwards;
+  stroke-dasharray: 2400;
+  stroke-dashoffset: 2400;
+}
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .svg_icons_css img {
   height: 32px;
   width: 32px;
+}
+.menu__link__footer::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.menu__link__footer:hover::after {
+  transform: scaleX(1);
+}
+.logo__text::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #EEEEEE;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.logo__text:hover::after {
+  transform: scaleX(1);
+}
+.inverted .logo__text::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.inverted .logo__text:hover::after {
+  transform: scaleX(1);
 }
 .menu__link::after {
   content: '';
@@ -48,7 +125,7 @@ a {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #222831;
+  background-color: black;
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -66,7 +143,7 @@ a {
   border-top: 10px solid #000000;
 }
 body .inverted {
-  background-color: #fff;
+  background-color: #EEEEEE;
   box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
 }
 .header.inverted .header__container .header__logo .logo__text {
@@ -74,6 +151,9 @@ body .inverted {
 }
 .header.inverted .header__container .menu__body .menu__list li .menu__link {
   color: #000;
+}
+body .inverted .header__container .menu__body .menu__list li .menu__sub-list::before {
+  border-color: transparent transparent #222831 transparent;
 }
 body .inverted .header__container {
   height: 5rem;
@@ -245,6 +325,10 @@ footer .footer__container .nav_col {
   width: 33.33333%;
   display: flex;
 }
+footer .footer__container .nav_col .footer__listmenu li {
+  margin-bottom: 15px;
+  position: relative;
+}
 footer .footer__container .nav_col .nav__section__one {
   width: 50%;
 }
@@ -292,7 +376,7 @@ footer .copyright__section {
     pointer-events: none;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1900px) {
   ._lock .menu__body::before {
     background-color: #00ADB5;
     border-bottom: 2px solid #222831;
