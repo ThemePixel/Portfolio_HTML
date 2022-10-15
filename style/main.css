@@ -348,30 +348,41 @@ footer {
   padding-top: var(--main-padding);
 }
 .nav__section__one {
+  text-align: center;
   background: #CEAB93;
   grid-area: nav__section__one;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 .nav__section__two {
+  text-align: center;
   background: #AD8B73;
   grid-area: nav__section__two;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 .paragraph__section {
+  text-align: center;
   background: #C3B091;
   grid-area: paragraph__section;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 .subscribe__section {
+  justify-content: center;
   background: #FFEDDB;
   grid-area: subscribe__section;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
+.subscribe__section .footer-heading {
+  text-align: center;
+}
+.subscribe__section .subscribe__button {
+  display: flex;
+}
 .follow_us_container {
+  text-align: center;
   background: #DBE2EF;
   grid-area: follow_us_container;
   border-radius: var(--main-radius);
@@ -523,5 +534,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
     grid-template-areas: "follow_us_container follow_us_container" "grid__section grid__section" "subscribe__section subscribe__section" "paragraph__section paragraph__section" "nav__section__two nav__section__one";
+  }
+  .footer__listmenu li {
+    margin-bottom: 10px;
   }
 }
