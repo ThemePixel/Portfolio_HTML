@@ -44,6 +44,9 @@ svg {
 ._lock svg {
   z-index: 88;
 }
+._lock svg .draw {
+  stroke: #ffffff;
+}
 svg .draw {
   stroke: black;
   stroke-width: 2px;
