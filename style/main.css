@@ -299,8 +299,8 @@ body._mobile .menu__list > li._active .menu__sub-list {
   display: grid;
   grid-template-areas: "one header header" "one three content" "two three content";
   gap: 1em;
-  grid-template-columns: repeat(2, 1fr) 2fr;
-  grid-template-rows: auto 1fr 63px;
+  grid-template-columns: repeat(2, 1fr) 1fr;
+  grid-template-rows: auto 1fr 78px;
 }
 img {
   width: 100%;
@@ -534,6 +534,8 @@ footer {
     overflow: hidden;
   }
   .footer__container {
+    row-gap: 10px;
+    column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
     grid-template-areas: "follow_us_container follow_us_container" "grid__section grid__section" "subscribe__section subscribe__section" "paragraph__section paragraph__section" "nav__section__two nav__section__one";
