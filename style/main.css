@@ -323,6 +323,10 @@ img {
 .h1 {
   grid-area: header;
 }
+:root {
+  --main-radius: 5px;
+  --main-padding: 10px;
+}
 footer {
   margin-top: 200px;
 }
@@ -340,32 +344,43 @@ footer {
 .grid__section {
   background: #222831;
   grid-area: grid__section;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 .nav__section__one {
   background: #CEAB93;
   grid-area: nav__section__one;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 .nav__section__two {
   background: #AD8B73;
   grid-area: nav__section__two;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 .paragraph__section {
   background: #C3B091;
   grid-area: paragraph__section;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 .subscribe__section {
   background: #FFEDDB;
   grid-area: subscribe__section;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 .follow_us_container {
   background: #DBE2EF;
   grid-area: follow_us_container;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 .copyright__section {
-  padding-top: 50px;
+  margin-top: 50px;
   padding-bottom: 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -503,5 +518,10 @@ footer {
   }
   body._lock {
     overflow: hidden;
+  }
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
+    grid-template-areas: "follow_us_container follow_us_container" "grid__section grid__section" "subscribe__section subscribe__section" "paragraph__section paragraph__section" "nav__section__two nav__section__one";
   }
 }
