@@ -413,92 +413,117 @@ body._mobile .menu__list > li._active .menu__sub-list{
 //////////////////////parallax section///////////////////////////////
 
 
+
+/////////////////////.grid__section{////////////////////////////////////////////
+
+.grid__section{
+    background: rgba(66, 61, 61, 0.048);
+    
+    
+    padding: 2em;
+
+    display: grid;
+    grid-template-areas: 
+         "one header header"
+         "one three content"
+         "two three content";
+    gap: 2em;
+
+
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: auto 1fr 100px;
+
+
+
+
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.content{
+    grid-area: content;
+}
+.h1{
+    grid-area: header;
+}
+/////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
+//////////////////////////////////////grid//////////////////////////
+/////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
+footer{
+    margin-top: 200px;
+}
+
+
+    .footer__container{
+        .grid__container{
+            display: grid; 
+        }
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+        
+        grid-template-areas: 
+            "grid__section nav__section__one nav__section__two paragraph__section"
+            "grid__section nav__section__one nav__section__two paragraph__section"
+            "grid__section nav__section__one nav__section__two subscribe__section"
+            "grid__section nav__section__one nav__section__two follow_us_container";
+
+        grid-gap: 0.2rem;
+        
+    }
+    .grid__section{
+        background: #222831;
+        grid-area: grid__section;
+
+    }
+    .nav__section__one{
+        background: #0b3d88;
+        grid-area: nav__section__one;
+    }
+    .nav__section__two{
+        background: #852158;
+        grid-area: nav__section__two;
+    }
+    .paragraph__section{
+        background: #b6a12c;
+        grid-area: paragraph__section;
+    }
+    .subscribe__section{
+        background: #93a597;
+        grid-area: subscribe__section;
+    }
+    .follow_us_container{
+        background: #3014ad;
+        grid-area: follow_us_container;
+    }
+    
+
+/////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
+//////////////////////////////////////grid////////////////////////////////////////////////////////////////grid////////////////////////////////////////////////////////////////grid//////////////////////////
+//////////////////////////////////////grid//////////////////////////
+
+
+
+
+
 /////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
 
-.footer{
-    background:  @4;
-}
-
-.footer__container{
-    max-width: 1140px;
-    color: #939393;
-    margin: 0 auto;
-}
-
-
-
-footer{
-    margin-top: 150px;
-    .footer__container{
-        p{
-            color: #737373;
-        }
-        .footer-heading{
-            margin-bottom: 20px;
-            font-size: 16px;
-            color: rgb(0, 0, 0);
-            text-transform: uppercase;
-            letter-spacing: .2rem;
-        }
-        padding-top: 50px;
-        display: flex;
-        .col{
-            margin-top: 40px;
-        }
-        .Aboutus__col{
-            width: 33.33333%;
-        }
-        .nav_col{
-            width: 33.33333%;
-            display: flex;
-            .footer__listmenu{
-                li{
-                    margin-bottom: 15px;
-                    position: relative;
-                }
-
-                
-            }
-            .nav__section__one{
-                width: 50%;
-                
-            }
-            .nav__section__two{
-                width: 50%;
-            }
-        }
-        .Subscribe__col{
-           
-            width: 33.33333%;
-
-
-            .subscribe__section{
-                margin-top: 25px;
-
-                .follow_us_container{
-                    margin-top: 60px;
-                }
-            }
-            .subscribe__button{
-                display: flex;
-                margin-bottom: 20px;
-            }
-            .social_icons_footer{
-                a{
-                    padding-right: 17px;
-                }
-                
-
-
-            }
-
-
-
-
-
-
-        }
-    }
     .copyright__section{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -515,7 +540,7 @@ footer{
  
 
 
-}
+
 
 
 ///////////////////////////////////////////////////////////footer end////////////////////////////////////////////////////////////
@@ -698,31 +723,17 @@ body._lock{
 
 
 
-
-
-
-
-/////////////////////////footer///////////////////////
-.footer__container{
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav_col{
-align-items: center;
-    flex-direction: column;
-}
-.nav__section__two{
-
-    margin-top: 20px;
-}
-.col{
-    
-    align-items: center;
 }
 
 
-}
+
+
+
+
+
+
+
+
 
 
 
