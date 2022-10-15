@@ -388,6 +388,9 @@ footer {
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
+.footer__listmenu li {
+  margin-bottom: 10px;
+}
 .copyright__section {
   margin-top: 50px;
   padding-bottom: 50px;
@@ -534,8 +537,5 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
     grid-template-areas: "follow_us_container follow_us_container" "grid__section grid__section" "subscribe__section subscribe__section" "paragraph__section paragraph__section" "nav__section__two nav__section__one";
-  }
-  .footer__listmenu li {
-    margin-bottom: 10px;
   }
 }
