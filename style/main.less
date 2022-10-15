@@ -481,6 +481,7 @@ footer{
     .footer__container{
         .grid__container{
             display: grid; 
+            
         }
         display: grid;
         height: 100%;
@@ -517,6 +518,7 @@ footer{
         grid-area: nav__section__two;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
+        grid-auto-columns: 228px;
     }
     .paragraph__section{
         text-align: center;
@@ -776,7 +778,10 @@ body._lock{
 
 }
 
-
+.grid__container{
+     
+    grid-auto-rows: 40px;
+}
 
 }
 

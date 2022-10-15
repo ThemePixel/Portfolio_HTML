@@ -360,6 +360,7 @@ footer {
   grid-area: nav__section__two;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  grid-auto-columns: 228px;
 }
 .paragraph__section {
   text-align: center;
@@ -539,5 +540,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
     grid-template-areas: "follow_us_container follow_us_container" "grid__section grid__section" "subscribe__section subscribe__section" "paragraph__section paragraph__section" "nav__section__two nav__section__one";
+  }
+  .grid__container {
+    grid-auto-rows: 40px;
   }
 }
