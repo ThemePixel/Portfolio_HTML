@@ -66,15 +66,15 @@ svg .draw {
 }
 .menu__link__footer::after {
   content: '';
-  width: 120px;
+  width: 6%;
   height: 2px;
   background-color: black;
   position: absolute;
-  left: 0;
-  bottom: -6px;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: center;
   transition: transform 0.5s ease;
+  display: flex;
+  margin-top: 5px;
 }
 .menu__link__footer:hover::after {
   transform: scaleX(1);
@@ -113,13 +113,13 @@ svg .draw {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #EEEEEE;
+  background-color: white;
   position: absolute;
-  left: 0;
-  bottom: 15px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease;
+  display: flex;
+  margin-top: 5px;
 }
 .menu__link:hover::after {
   transform: scaleX(1);
@@ -681,5 +681,10 @@ footer {
   }
   body .footer__container .paragraph__section .footer-heading {
     margin-bottom: 15px;
+  }
+  .grid__section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: "one header " "one three " "two three " "content content ";
   }
 }
