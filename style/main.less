@@ -469,7 +469,7 @@ img{
 
 :root{
     --main-radius:5px;
-    --main-padding:20px;
+    //--main-padding:20px;
 }
 
 
@@ -479,38 +479,51 @@ footer{
 
 
     .footer__container{
-        .grid__container{
-            display: grid; 
-            
+        .flex_center{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           padding: 20px 20px;
         }
         display: grid;
         height: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+        grid-template-columns: 1fr 0.6fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         
         grid-template-areas: 
-            "grid__section nav__section__one nav__section__two paragraph__section"
-            "grid__section nav__section__one nav__section__two paragraph__section"
-            "grid__section nav__section__one nav__section__two subscribe__section"
-            "grid__section nav__section__one nav__section__two follow_us_container";
+            "grid__container nav__section__one nav__section__two paragraph__section"
+            "grid__container nav__section__one nav__section__two paragraph__section"
+            "grid__container nav__section__one nav__section__two subscribe__section"
+            "grid__container nav__section__one nav__section__two subscribe__section"
+            "grid__container nav__section__one nav__section__two follow_us_container"
+            "grid__container nav__section__one nav__section__two follow_us_container"
+            "grid__container nav__section__three nav__section__three nav__section__three"
+            "grid__container nav__section__three nav__section__three nav__section__three";
+
 
         grid-gap: 0.2rem;
-        //text-align: center;
+        
         
     }
-    .grid__section{
-        background: #222831;
-        grid-area: grid__section;
+    .grid__container{
+        background: #FFEDDB;
+        grid-area: grid__container;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
 
     }
+
     .nav__section__one{
         text-align: center;
         background: #CEAB93;
         grid-area: nav__section__one;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
+        grid-auto-rows: 40px;
+    
+            
+        
     }
     .nav__section__two{
         text-align: center;
@@ -518,7 +531,14 @@ footer{
         grid-area: nav__section__two;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
-        
+        grid-auto-rows: 40px;
+    }
+    .nav__section__three{
+        text-align: center;
+        background: #AD8B73;
+        grid-area: nav__section__three;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
     }
     .paragraph__section{
         text-align: center;
@@ -557,7 +577,7 @@ footer{
 
     .footer__listmenu{
         li{
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
     }
 
@@ -565,7 +585,12 @@ footer{
 //////////////////////////////////////grid////////////////////////////////////////////////////////////////grid////////////////////////////////////////////////////////////////grid//////////////////////////
 //////////////////////////////////////grid//////////////////////////
 
-
+.footer-heading{
+    
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
 
 
 
@@ -771,29 +796,23 @@ body._lock{
     row-gap: 10px;
     column-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 2fr 2fr;
     grid-template-areas: 
         "follow_us_container follow_us_container"
-        "grid__section grid__section"
+        "grid__container grid__container"
         "subscribe__section subscribe__section"
         "paragraph__section paragraph__section"
         "nav__section__two nav__section__one"
-        
+        "nav__section__three nav__section__three"
 
 
 }
-.nav__section__two{
-   
-    grid-auto-columns: 228px;
-}
 
 
 
 
-.grid__container{
-    
-    grid-auto-rows: 40px;
-}
+
+
 
 body .footer__container .follow_us_container{
         
