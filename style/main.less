@@ -56,14 +56,17 @@ a{
 }
 
 
-
+.inverted .draw{
+    stroke: #000000;
+    
+  }
 
 
 ._mobile .header__logo{
       display: flex;
  }
 svg{
-    
+    stroke: #DBE2EF;
     width: 125px;
     margin-left: 12px;
     position: relative;
@@ -81,6 +84,10 @@ svg{
     z-index: 88;
   }
   
+
+  body svg .draw{
+    stroke: rgb(255, 255, 255);
+}
     ._lock svg .draw{
         stroke: rgb(255, 255, 255);
     }
