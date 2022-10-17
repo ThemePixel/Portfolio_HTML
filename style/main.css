@@ -332,6 +332,9 @@ body {
   text-align: center;
   background: #EEEEEE;
 }
+.container .svg__deer-container {
+  height: 1px;
+}
 .container .content h1 {
   font-size: 3em;
   margin-top: 1em;
