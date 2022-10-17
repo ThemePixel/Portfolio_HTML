@@ -48,7 +48,11 @@ a{
     color: #000;
 }
 
-
+h1{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #000;
+}
 .wrapper{
     
     width: 1140px;
@@ -65,7 +69,7 @@ a{
 ._mobile .header__logo{
       display: flex;
  }
-svg{
+ .svg__logo{
     stroke: #DBE2EF;
     width: 125px;
     margin-left: 12px;
@@ -360,6 +364,34 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
         }
     }
 }
+
+
+.elements__section-grid{
+    margin-top: 227px;
+    margin-bottom: 227px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.2rem;    
+    grid-template-areas: 
+            "container container svganimate__containe svganimate__containe"
+            "container container svganimate__containe svganimate__containe"
+            "container container svganimate__containe svganimate__containe"
+            "container container svganimate__containe svganimate__containe";
+}
+
+.container{
+    background-color: #00ADB5;
+    grid-area: container;
+}
+.svganimate__container{
+    
+    grid-area: svganimate__containe;
+}
+
+
+
 body._pc .menu__list > li:hover .menu__sub-list{
     opacity: 1;
     visibility: visible;
@@ -427,10 +459,10 @@ body {
 }
 
 .container{
-    width: 40%;
-    margin: 15em auto;
-    text-align: center;
+    width: 100%;
     
+    text-align: center;
+    background: @4;
     .content{
         h1{
             font-size: 3em;
@@ -545,12 +577,13 @@ body {
     grid-template-areas: 
          "one header header"
          "one three content"
+         
          "two three content";
     gap: 1em;
 
 
     grid-template-columns: repeat(2, 1fr) 1fr;
-    grid-template-rows: auto 1fr 78px;
+    grid-template-rows: auto 1fr 78px ;
 }
 
 
@@ -586,6 +619,8 @@ body {
 }
 .h1{
     grid-area: header;
+    font-size: 21px;
+    font-weight: 600;
 }
 /////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
 //////////////////////////////////////grid//////////////////////////
@@ -598,9 +633,6 @@ body {
 }
 
 
-footer{
-    margin-top: 200px;
-}
 
 
     .footer__container{
@@ -703,9 +735,92 @@ footer{
 
     .footer__listmenu{
         li{
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
     }
+
+
+
+
+
+    .svganimate__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .button{
+            width: 160px;
+            height: 60px;
+            position: relative;
+            border-left: 1px solid black;
+            margin-bottom: 10px;
+            transition: .5s;
+            .svg__button__footer{
+                z-index: 99999999;
+                width: 158px;
+                height: 57px;
+                margin-left: -80px;
+                position: absolute;
+            }
+            
+            span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                transition: .5s;
+            }
+            &:hover{
+                .svg__image{
+                    stroke-dashoffset: 0;
+                }
+                span{
+                    left: 100px;
+                }
+                border-left: 1px solid rgba(0,0,0,0);
+                &::before{
+                    width: 100px;
+                    left: 60px;
+                }
+            }
+            &::before{
+                top: -1px; left: -1px;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                transition: .5s;
+                
+            }
+            .svg__image{
+    
+                position: absolute;
+                top: 50%;
+                left: -10%;
+                transform: translate(0, -50%);
+                stroke: black;
+                fill: transparent;
+                stroke-width: 10;
+                width: 70px; height: 70px;
+                stroke-dasharray: 4000;
+                transition: .9s ease-out;
+                stroke-dashoffset: -4000;
+            }
+        }
+    }
+
+
+
+
+
+
+
 
 /////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
 //////////////////////////////////////grid////////////////////////////////////////////////////////////////grid////////////////////////////////////////////////////////////////grid//////////////////////////
@@ -714,7 +829,7 @@ footer{
 .footer-heading{
     
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 600;
 }
 
@@ -921,17 +1036,19 @@ body._lock{
 
 
 .footer__container{
+    
     row-gap: 10px;
     column-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr 1fr 2fr 2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.2fr 0.5fr 0.2fr;
     grid-template-areas: 
         "follow_us_container follow_us_container"
         "grid__container grid__container"
         "subscribe__section subscribe__section"
         "paragraph__section paragraph__section"
-        "nav__section__two nav__section__one"
-        "nav__section__three nav__section__three"
+        "nav__section__two nav__section__two"
+        "nav__section__one nav__section__one"
+        "nav__section__three nav__section__three";
 
 
 }
@@ -1014,6 +1131,6 @@ body .footer__container .paragraph__section{
 
 
 
-
+    
 
 
