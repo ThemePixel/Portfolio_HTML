@@ -251,10 +251,11 @@ body .inverted .header__container {
   margin: 0px 0px 0px 0px;
 }
 .elements__section-grid {
+  height: 1000px;
+  background: #AD8B73;
   margin-top: 227px;
   margin-bottom: 227px;
   display: grid;
-  height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 0.2rem;
