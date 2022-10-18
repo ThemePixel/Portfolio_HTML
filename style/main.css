@@ -173,6 +173,9 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
 body .inverted .header__container {
   height: 5rem;
 }
+._mobile.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
 .header {
   position: fixed;
   top: 0;
