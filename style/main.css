@@ -416,7 +416,7 @@ body {
   }
 }
 .grid__section {
-  background: rgba(66, 61, 61, 0.048);
+  background: #EDE4E0;
   padding: 2em;
   display: grid;
   grid-template-areas: "one header header" "one three content" "two three content";
@@ -471,7 +471,7 @@ body {
   padding: 20px 20px;
 }
 .grid__container {
-  background: #FFEDDB;
+  background: #251B37;
   grid-area: grid__container;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -528,7 +528,7 @@ body {
 }
 .copyright__section {
   text-align: center;
-  background: #DBE2EF;
+  background: #7D6E83;
   grid-area: copyright__section;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);

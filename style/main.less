@@ -18,7 +18,9 @@
 @2: #393E46;
 @3: #00ADB5;
 @4: #EEEEEE;
-
+@5: #7D6E83;
+@6: #251B37;
+@7: #EDE4E0;
 
 html{
     box-sizing: border-box;
@@ -593,7 +595,7 @@ body {
 /////////////////////.grid__section{////////////////////////////////////////////
 
 .grid__section{
-    background: rgba(66, 61, 61, 0.048);
+    background: @7;
     
     
     padding: 2em;
@@ -690,7 +692,7 @@ body {
         
     }
     .grid__container{
-        background: #FFEDDB;
+        background: @6;
         grid-area: grid__container;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
@@ -757,8 +759,9 @@ body {
         padding-top: var(--main-padding);
     }
     .copyright__section{
+        
         text-align: center;
-        background: #DBE2EF;
+        background: @5;
         grid-area: copyright__section;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
