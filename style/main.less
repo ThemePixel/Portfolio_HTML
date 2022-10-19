@@ -292,7 +292,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                                 flex-direction: column;
                                 display: flex;
                                 width: 25%;
-                                border-right: 1px solid white;
+                                border-right: 1px solid  rgba(255, 255, 255, 0.06);
                                 .menu__sub-list__down{
                                     padding-top: 25px;
                                 }
@@ -452,7 +452,7 @@ body._mobile .menu__list > li._active .menu__arrow{
 body._mobile .menu__arrow{
     position: absolute;
     right: 0px;
-    top: 40%;
+    top: 35%;
     display: block;
     width: 0;
     height: 0;
@@ -995,8 +995,15 @@ body {
         
         
        }
-       
-
+       .header .header__container .menu__body .menu__list .mega-menu_section .menu__sub-list .sub-list__li-tag{
+        display: block;
+        width: 100%;
+        border-right: none;
+       }
+       .header .header__container .menu__body .menu__list li .menu__sub-list{
+        width: 100%;
+        min-width: 100%;
+       }
 
        
 
@@ -1014,13 +1021,13 @@ body {
     background-color: #000;
    }
 
-
-
+   body._mobile .menu__arrow {
+    top: 15px;
+   }
 
 body .header .header__container .menu__body .menu__list li .menu__sub-list{
     position: relative;
-    flex: 1 1 100%;
-    align-items: flex-start;
+   
     display: none;
 }
 
