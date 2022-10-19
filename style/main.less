@@ -672,7 +672,7 @@ body {
         display: grid;
         height: 100%;
         grid-template-columns: 1fr 0.6fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         
         grid-template-areas: 
             "grid__container nav__section__one nav__section__two paragraph__section"
@@ -682,8 +682,8 @@ body {
             "grid__container nav__section__one nav__section__two follow_us_container"
             "grid__container nav__section__one nav__section__two follow_us_container"
             "grid__container nav__section__three nav__section__three nav__section__three"
-            "grid__container nav__section__three nav__section__three nav__section__three";
-
+            "grid__container nav__section__three nav__section__three nav__section__three"
+            "copyright__section copyright__section copyright__section copyright__section";
 
         grid-gap: 0.2rem;
         
@@ -756,7 +756,13 @@ body {
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
     }
-    
+    .copyright__section{
+        text-align: center;
+        background: #DBE2EF;
+        grid-area: copyright__section;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+    }
 
     .footer__listmenu{
         li{
@@ -863,8 +869,7 @@ body {
 /////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
 
     .copyright__section{
-        margin-top: 50px;
-        padding-bottom: 50px;
+        
         border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
         
         display: flex;
@@ -926,11 +931,7 @@ body {
 
    
 
-   .footer__container{
-        margin-top: -216px;
-        
-   }
-
+  
     .container{
         width: 100%;
     }
@@ -1077,7 +1078,7 @@ body._lock{
     row-gap: 10px;
     column-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.2fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.2fr 0.5fr 0.2fr 0.2fr;
     grid-template-areas: 
         "follow_us_container follow_us_container"
         "grid__container grid__container"
@@ -1085,8 +1086,8 @@ body._lock{
         "paragraph__section paragraph__section"
         "nav__section__two nav__section__two"
         "nav__section__one nav__section__one"
-        "nav__section__three nav__section__three";
-
+        "nav__section__three nav__section__three"
+        "copyright__section copyright__section";
 
 }
 

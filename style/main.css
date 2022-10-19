@@ -459,8 +459,8 @@ body {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 0.6fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "grid__container nav__section__one nav__section__two paragraph__section" "grid__container nav__section__one nav__section__two paragraph__section" "grid__container nav__section__one nav__section__two subscribe__section" "grid__container nav__section__one nav__section__two subscribe__section" "grid__container nav__section__one nav__section__two follow_us_container" "grid__container nav__section__one nav__section__two follow_us_container" "grid__container nav__section__three nav__section__three nav__section__three" "grid__container nav__section__three nav__section__three nav__section__three";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "grid__container nav__section__one nav__section__two paragraph__section" "grid__container nav__section__one nav__section__two paragraph__section" "grid__container nav__section__one nav__section__two subscribe__section" "grid__container nav__section__one nav__section__two subscribe__section" "grid__container nav__section__one nav__section__two follow_us_container" "grid__container nav__section__one nav__section__two follow_us_container" "grid__container nav__section__three nav__section__three nav__section__three" "grid__container nav__section__three nav__section__three nav__section__three" "copyright__section copyright__section copyright__section copyright__section";
   grid-gap: 0.2rem;
 }
 .footer__container .flex_center {
@@ -523,6 +523,13 @@ body {
   text-align: center;
   background: #DBE2EF;
   grid-area: follow_us_container;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.copyright__section {
+  text-align: center;
+  background: #DBE2EF;
+  grid-area: copyright__section;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
@@ -604,8 +611,6 @@ body {
   font-weight: 600;
 }
 .copyright__section {
-  margin-top: 50px;
-  padding-bottom: 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
   display: flex;
   justify-content: center;
@@ -628,9 +633,6 @@ body {
   }
 }
 @media only screen and (max-width: 1900px) {
-  .footer__container {
-    margin-top: -216px;
-  }
   .container {
     width: 100%;
   }
@@ -755,8 +757,8 @@ body {
     row-gap: 10px;
     column-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.2fr 0.5fr 0.2fr;
-    grid-template-areas: "follow_us_container follow_us_container" "grid__container grid__container" "subscribe__section subscribe__section" "paragraph__section paragraph__section" "nav__section__two nav__section__two" "nav__section__one nav__section__one" "nav__section__three nav__section__three";
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.2fr 0.5fr 0.2fr 0.2fr;
+    grid-template-areas: "follow_us_container follow_us_container" "grid__container grid__container" "subscribe__section subscribe__section" "paragraph__section paragraph__section" "nav__section__two nav__section__two" "nav__section__one nav__section__one" "nav__section__three nav__section__three" "copyright__section copyright__section";
   }
   body .footer__container .follow_us_container {
     display: flex;
