@@ -615,7 +615,7 @@ body {
     align-items: center;
   }
   .menu__list .menu__link {
-    padding: 26px 0px;
+    padding: 19px 0px;
   }
   .menu__list .menu__sub-list {
     transform: translate(-159px, 45%);
@@ -668,6 +668,9 @@ body {
   }
   ._lock .header.inverted .header__container .menu__body .menu__list li .menu__link {
     color: white;
+  }
+  ._lock .header.inverted .header__container .menu__body .menu__list {
+    margin-top: -35px;
   }
   ._lock .inverted .menu__arrowfalse {
     border-top: 10px solid #f7f7f7;
@@ -754,9 +757,10 @@ body {
     z-index: 2;
   }
   .menu__body .menu__list {
+    margin-left: -68px;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 25px;
+    margin-top: 21px;
   }
   .menu__body .menu__list li {
     flex-wrap: wrap;
