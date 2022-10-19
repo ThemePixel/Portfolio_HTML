@@ -630,20 +630,41 @@ body {
     width: 100%;
   }
   ._lock .menu__body::before {
-    background-color: #00ADB5;
-    border-bottom: 2px solid #222831;
+    background-color: #EEEEEE;
+  }
+  ._lock .inverted .menu__body::before {
+    background-color: #EEEEEE;
+    height: 70px;
   }
   ._lock .header.inverted .header__container .header__logo .logo__text {
-    color: #fff;
+    color: #000000;
+  }
+  ._lock .inverted .draw {
+    stroke: #000;
+  }
+  ._lock .header .draw {
+    stroke: #000;
+  }
+  ._lock .header .header__container .header__logo .logo__text {
+    color: #000;
+  }
+  ._lock .menu__icon::before {
+    background-color: black;
+  }
+  ._lock .menu__icon span {
+    background-color: black;
+  }
+  ._lock .menu__icon::after {
+    background-color: black;
   }
   ._lock .inverted .menu__icon::before {
-    background-color: #fff;
+    background-color: black;
   }
   ._lock .inverted .menu__icon span {
-    background-color: #fff;
+    background-color: black;
   }
   ._lock .inverted .menu__icon::after {
-    background-color: #fff;
+    background-color: black;
   }
   ._lock .header.inverted .header__container .menu__body .menu__list li .menu__link {
     color: white;
@@ -717,7 +738,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #00ADB5;
+    background-color: rgba(23, 23, 23, 0.95);
     padding: 100px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: scroll;
