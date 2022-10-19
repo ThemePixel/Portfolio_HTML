@@ -284,6 +284,9 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
             }
             .menu__body{
                 .menu__list{
+                    li{
+                        margin: 0px 0px 0px 60px;
+                    }
                     .mega-menu_section{
                         .menu__sub-list{
                             margin-top: -2px;
@@ -1005,7 +1008,17 @@ body {
         min-width: 100%;
        }
 
-       
+       .header .header__container .menu__body .menu__list li {
+        margin: 0px 0px 0px -10px;
+    }
+    body .inverted .menu__body .menu__list{
+        margin-top: -30px;
+    }
+    ._lock .menu__body .menu__list{
+        margin-top: -15px;
+    }
+
+
 
        ._lock .inverted .menu__arrowfalse {
         border-top: 10px solid #f7f7f7;
@@ -1027,10 +1040,12 @@ body {
 
 body .header .header__container .menu__body .menu__list li .menu__sub-list{
     position: relative;
-   
+    background-color: @6;
     display: none;
 }
-
+.header .header__container .menu__body .menu__list li .menu__sub-list li .menu__sub-link{
+    color: white;
+}
 body .header .header__container .menu__body .menu__list > li._active .menu__sub-list{   
     display: block;
 }
