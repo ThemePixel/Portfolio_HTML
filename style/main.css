@@ -671,9 +671,10 @@ body {
     color: white;
     display: block;
   }
-  ._lock .header.inverted .header__container .menu__body .menu__list li {
+  body._lock .header.inverted .header__container .menu__body .menu__list li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     display: block;
+    line-height: normal;
   }
   .header .header__container .menu__body .menu__list .mega-menu_section .menu__sub-list .sub-list__li-tag {
     display: block;
@@ -688,7 +689,7 @@ body {
     margin: 0px 0px 0px -10px;
   }
   body .inverted .menu__body .menu__list {
-    margin-top: -30px;
+    margin-top: -28px;
   }
   ._lock .inverted .menu__arrowfalse {
     border-top: 10px solid #f7f7f7;
@@ -827,11 +828,8 @@ body {
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-template-areas: "one header " "one three " "two three " "content content ";
   }
-  ._mobile .header .header__container .menu__body .menu__list li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  }
   ._mobile .menu__body .menu__list {
-    margin-top: 25px;
+    margin-top: 39px;
   }
   ._mobile .header .header__container .menu__body .menu__list li .menu__link {
     padding: 8px 0px;
@@ -840,7 +838,10 @@ body {
     width: auto;
   }
   ._mobile .menu__arrow {
-    top: 12px;
+    top: 10px;
+  }
+  .inverted .menu__arrow {
+    top: 13px;
   }
   .inverted.header .header__container .menu__body .menu__list li .menu__sub-list {
     width: 100%;
@@ -849,10 +850,10 @@ body {
     display: block;
   }
   ._mobile .header .header__container .menu__body .menu__list li {
-    display: block;
-  }
-  ._mobile .header .header__container .menu__body .menu__list li {
     margin-bottom: 10px;
     margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    display: block;
+    line-height: 30px;
   }
 }
