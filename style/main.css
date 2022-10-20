@@ -680,6 +680,7 @@ body {
     display: block;
     width: 100%;
     border-right: none;
+    border-bottom: none;
   }
   .header .header__container .menu__body .menu__list li .menu__sub-list {
     width: 100%;
