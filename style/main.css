@@ -303,7 +303,6 @@ body._mobile .menu__list > li._active .menu__arrow {
 body._mobile .menu__arrow {
   position: absolute;
   right: 0px;
-  top: 35%;
   display: block;
   width: 0;
   height: 0;
@@ -683,16 +682,13 @@ body {
   }
   .header .header__container .menu__body .menu__list li .menu__sub-list {
     width: 100%;
-    min-width: 100%;
+    min-width: auto;
   }
   .header .header__container .menu__body .menu__list li {
     margin: 0px 0px 0px -10px;
   }
   body .inverted .menu__body .menu__list {
-    margin-top: -40px;
-  }
-  ._lock .menu__body .menu__list {
-    margin-top: 17px;
+    margin-top: -30px;
   }
   ._lock .inverted .menu__arrowfalse {
     border-top: 10px solid #f7f7f7;
@@ -705,9 +701,6 @@ body {
   }
   .inverted .menu__icon::after {
     background-color: #000;
-  }
-  body._mobile .menu__arrow {
-    top: 15px;
   }
   body .header .header__container .menu__body .menu__list li .menu__sub-list {
     position: relative;
@@ -833,5 +826,23 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-template-areas: "one header " "one three " "two three " "content content ";
+  }
+  ._mobile .header .header__container .menu__body .menu__list li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  ._mobile .menu__body .menu__list {
+    margin-top: 25px;
+  }
+  ._mobile .header .header__container .menu__body .menu__list li .menu__link {
+    padding: 8px 0px;
+  }
+  ._mobile .header .header__container .menu__body .menu__list li .menu__sub-list {
+    width: auto;
+  }
+  ._mobile .menu__arrow {
+    top: 12px;
+  }
+  .inverted.header .header__container .menu__body .menu__list li .menu__sub-list {
+    width: 100%;
   }
 }
