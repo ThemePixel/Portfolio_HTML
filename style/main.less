@@ -585,7 +585,7 @@ body {
 
         .grid__container{
           background: #f1efe9;
-          margin: 40px 40px 40px 40px;
+          margin: 40px 0px 0px 0px;
           
           padding: 16px;
           display: grid;
@@ -607,7 +607,7 @@ body {
             font-weight: 800;
             z-index: 1;
             font-size: 200px;
-            top: -59px;
+            top: -61px;
             color: #d500008c;
             opacity: 0.99;
             margin-left: 54px;
@@ -619,7 +619,7 @@ body {
               z-index: -1;
               font-size: 200px;
               top: -117px;
-              margin-left: -32px;
+              margin-left: 4px;
         }
           
           img{
@@ -644,10 +644,10 @@ body {
       
           }
           h1{
-             
+          margin-top: -3px;  
           grid-area: header;
           font-size: 42px;
-          margin: 0;
+          
           text-transform: uppercase;
           font-weight: 300;
           line-height: 34px;
@@ -663,9 +663,8 @@ body {
           }
               p{
                   
-                  font-size: 21px;
-                  text-transform: uppercase;
-                  margin: 0;
+                font-size: 22px;
+                margin-top: -3px;
                 }
               a{
                   
@@ -1298,30 +1297,36 @@ body .footer__container .paragraph__section{
     }
     /////////////////////////////////////.grid__container mobile less///////////////////////////////////////
     .grid__container{
-        padding: 10px;
+        grid-template-rows: auto 1fr 89px;
         gap: 10px;
-        margin: 20px 20px 20px 20px;
+        margin: 30px 0px 0px 0px;;
         &::before{
             font-size: 100px;
-            top: -56px;
-            margin-left: -18px
+            top: -69px;
+            margin-left: 6px;
         }
         &::after{
             font-size: 150px;
             top: -43px;
-            margin-left: 24px;
+            margin-left: 40px;
         }
         h1{
+            margin-top: -6px;
             font-size: 31px;
         }
         .content{
             p{
-                font-size: 18px;
+                font-size: 17px;
             }
             a{
-                margin-top: 60px;
-                svg{
+                margin-top: 80px;
+                .svg__arrow{
                     width: 99px;
+                    margin-bottom: -13px;
+                }
+                span{
+                    margin-top: 22px;
+                    
                 }
             }
 
