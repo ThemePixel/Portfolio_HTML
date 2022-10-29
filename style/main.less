@@ -772,10 +772,96 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
         }
     }
 
+.main__container{
+    margin-top: 30px;
+    
+
+    .reveal__section{
+        
+        .reveal__container{
+            width: 1800px;
+            margin: 0 auto;
+            
+            .reveal__box{
+                height: 500px;
+                width: 100%;
+                
+                background: @2;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
 
 
 
 
+
+                .reveal__div{
+
+                    //position: absolute;
+                    //top: 0;
+                    
+                    z-index: 1;
+
+
+                    margin-right: 30px;
+                    //animation: move 2s linear alternate;
+                    box-shadow: 0 0 8px rgb(0 0 0);
+                    opacity: 0;
+                    transform: translate(0px, 120%);
+                    transition: all 0.8s ease 0s;
+                    width: 300px;
+                    height: 340px;
+                    background: @6;
+                    border: 2px solid @3;
+                    &:last-child{
+                        margin: 0;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+//@keyframes move {
+   // 0% {
+   //     top: 600px;
+   // }
+   // 100% {
+   //    top: 0px;
+    //}
+//}
+
+//.reveal__container{
+
+   // div:nth-child(1){
+    //    margin-right: 1215px;
+   // }
+    
+   // div:nth-child(2){
+     //   margin-right: 370px;
+   // }
+    
+   // div:nth-child(3){
+    //    margin-right: -457px;
+   // }
+    //div:nth-child(4){
+    //    margin-right: -1284px;
+   // }
+//}
+
+
+.main__container .reveal__section .reveal__container .reveal__box .reveal__div.element-show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    //-webkit-transform: translateY(0);
+    //-ms-transform: translateY(0);
+    //transform: translateY(0);
+   // transition: opacity 1s;
+    
+}
 
 .elements__section-grid{
     
