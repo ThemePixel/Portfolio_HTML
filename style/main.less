@@ -771,66 +771,17 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
             }
         }
     }
-///////////////////////////////////////////////////
-/////////////////////////////////////////////////////
-/////////////////////////////////////////////////////
-.main__container{
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    .reveal__section{
-        width: 1800px;
-        margin: 0 auto;
-        .reveal__container{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            
-            h1{
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            .reveal__box{
-                height: 500px;
-                width: 100%;
-                background: @2;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                .reveal__div{
-                    margin-right: 30px;
-                    box-shadow: 0 0 8px rgb(0 0 0);
-                    opacity: 0;
-                    transform: translate(0, 120%);    
-                    transition: all 0.8s ease 0s;
-                    width: 300px;
-                    height: 340px;
-                    background: @6;
-                    border: 2px solid @3;
-                    &:last-child{
-                        margin: 0;
-                    }
-
-                }
-            }
-        }
-    }
-
-}
 
 
+//////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
 
-.main__container .reveal__section .reveal__container .reveal__box .reveal__div.element-show {
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li.element-show{
+
     opacity: 1;
-    transform: translate(0px, 0px);
+    transform: translateY(0);
     
     
 }
-///////////////////////////////////////////////////
-/////////////////////////////////////////////////////
-/////////////////////////////////////////////////////
 
 .loading-lazy__section{
     margin-top: 30px;
@@ -860,15 +811,19 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                     width: 300px;
                     height: 340px;
                     border: 2px solid @3;
+                    opacity: 0;
+                    transform: translateY(200px);    
+                    transition: 800ms ;
+                    img{
+                        
+                        width: 100%;
+                        height: 100%;
+                    }
                     &:last-child{
                         margin: 0;
                     }
 
-                    img{
-                        width: 100%;
-                        height: 100%;
-
-                    }
+                   
                 }
             }
         }
@@ -876,7 +831,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
 }
 
 
-
+//////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
 
 
 

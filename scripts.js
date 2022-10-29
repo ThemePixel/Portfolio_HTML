@@ -170,7 +170,7 @@ function onEntry(entry) {
 let options = {
     threshold: [0.2] };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.reveal__div');
+let elements = document.querySelectorAll('.loading-lazy__li');
 
 for (let elm of elements) {
     observer.observe(elm);
@@ -178,43 +178,23 @@ for (let elm of elements) {
 
 
 
-//////////////////////////////////////loading-lazy__section///////////////////////////////////////////////////////
+//////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
+const images = document.querySelectorAll(".imglazy");
 
-const lazyImages = document.querySelectorAll('.imglazy[data-src]');
-const windowHeight = document.documentElement.clientHeight;
+const imgOptions = {};
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
 
-let lazyImagesPosition = [];
-if (lazyImages.length > 0) {
-    lazyImages.forEach(img => {
-        if (img.dataset.src || img.dataset.srcset) {
-            lazyImagesPosition.push(img.getBoundingClientRect().top + pageYOffset);
-            lazyScrollCheck();
-        }
-    });
-}
- 
-window.addEventListener("scroll", lazyScroll);
+    const image = entry.target;
+    const newURL = image.getAttribute('data-src');
+    image.src = newURL;
+    imgObserver.unobserve(entry.target);
+  });
+}, imgOptions);
 
-function lazyScroll() {
-    if(document.querySelectorAll('.imglazy[data-src]').length > 0) {
-        lazyScrollCheck();
-    }
-}
+images.forEach((image) => {
+  imgObserver.observe(image);
+});
 
-function lazyScrollCheck() {
-    let imgIndex = lazyImagesPosition.findIndex(
-        item => pageYOffset > item - windowHeight
-        );
-        if (imgIndex >= 0) {
-            if (lazyImages[imgIndex].dataset.src) {
-                lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
-                lazyImages[imgIndex].removeAttribute('data-src');
-            }
-            delete lazyImagesPosition[imgIndex];
-        }
-}
-
-
-
-
-//////////////////////////////////////loading-lazy__section///////////////////////////////////////////////////////
+//////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
