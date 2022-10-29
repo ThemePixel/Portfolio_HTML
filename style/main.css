@@ -650,7 +650,7 @@ body {
   align-items: center;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li {
-  background: url("../img/logo.png") center / 50px no-repeat;
+  background: url("../img/logo.gif") center / 50px no-repeat;
   margin-right: 30px;
   box-shadow: 0 0 8px #000000;
   width: 300px;
