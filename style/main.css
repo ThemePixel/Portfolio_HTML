@@ -143,7 +143,7 @@ svg .draw {
   border-top: 10px solid #000000;
 }
 body .inverted {
-  background-color: #5f9cf763;
+  background-color: #e3fdfd80;
   box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
 }
 .header.inverted .header__container .header__logo .logo__text {
@@ -592,7 +592,7 @@ body {
   margin: 0 auto;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box {
-  background: #393E46;
+  background: #112D4E;
   padding-top: 35px;
   position: relative;
 }
