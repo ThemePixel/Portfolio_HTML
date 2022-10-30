@@ -199,8 +199,9 @@ body {
   padding: 0;
 }
 .glitch {
+  margin-top: -75px;
   width: 100vw;
-  height: 106vh;
+  height: 108vh;
   max-width: 100%;
   position: relative;
   display: flex;
