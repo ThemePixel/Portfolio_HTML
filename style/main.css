@@ -581,7 +581,7 @@ body {
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li.element-show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 .loading-lazy__section {
   margin-top: 30px;
@@ -592,6 +592,8 @@ body {
   margin: 0 auto;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box {
+  background: #393E46;
+  padding-top: 35px;
   position: relative;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box h1 {
@@ -600,9 +602,8 @@ body {
   left: 0;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
-  height: 500px;
+  height: 367px;
   width: 100%;
-  background: #393E46;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -616,8 +617,8 @@ body {
   height: 340px;
   border: 2px solid #00ADB5;
   opacity: 0;
-  transform: translateY(200px);
-  transition: 800ms ;
+  transform: translateX(100px);
+  transition: 1800ms ;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li img {
   width: 100%;
