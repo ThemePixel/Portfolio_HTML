@@ -850,6 +850,11 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
             animation: key-glow 1.7s ease-in-out infinite;
         }
         .swiper-carousel{
+            .swiper-wrapper{
+                .swiper-slide-active {
+                    opacity: 1;
+                }
+            }
             width: 100%;
             height: 100%;
             .swiper-carousel__image-wrapper{
@@ -873,6 +878,9 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                 position: relative;
                 height: calc(100vh - var(--padding)*2);
                 text-align: center;
+                opacity: 0.25;
+                
+                
             }
         }
     }
