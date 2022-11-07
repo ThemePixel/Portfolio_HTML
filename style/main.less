@@ -773,6 +773,103 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
         }
     }
 
+//////////////////////////////////////3d slider with swiper slider///////////////////////////////////////////////////////
+
+.swiper-slider{
+    margin: 25px 0px 25px 0px;
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        box-shadow: inset 0 0 500px black;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: url(../swiper-slider/img/light.png);
+        background-position: center -70px; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        animation: key-light 3s ease-in-out infinite;
+    }
+
+    h2{
+        margin: 25px 25px;
+        text-align: center;
+    }
+    .swiper-slider__wrapper{
+        padding: 50px 50px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-image: url(../swiper-slider/img/glow.png);
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            animation: key-glow 1.7s ease-in-out infinite;
+        }
+    }
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .5;
+
+    }
+}
+
+@keyframes key-light{
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .3;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+@keyframes key-glow{
+    0%{
+        opacity: .6;
+    }
+    50%{
+        opacity: .8;
+    }
+    100%{
+        opacity: .6;
+    }
+}
+
+
+
+
+//////////////////////////////////////3d slider with swiper slider///////////////////////////////////////////////////////
+
+
+
+
+
+
 
 //////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
 
@@ -1877,14 +1974,14 @@ body .footer__container .paragraph__section{
         }
     }
 
-
+}
 
 
 
 ////////////////////////////////////.grid__container mobile less////////////////////////////////////////
 
 
-}
+
 
 
 

@@ -196,5 +196,33 @@ images.forEach((image) => {
   imgObserver.observe(image);
 });
 //////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', function() {
+
+	const showSlider = new Swiper('.showcase-carousel', {
+		loop: true,
+		slidesPerView: 3,
+		speed: 1800,
+		centeredSlides: true,
+		navigation: {
+			nextEl: '.next__arrow',
+			prevEl: '.prev__arrow'
+		}
+	})
+
+	document.querySelector('video').playbackRate = 2
+
+})
+
+//////////////////////////////////////3d slider with swiper slider///////////////////////////////////////////////////////
 
 
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////3d slider with swiper slider///////////////////////////////////////////////////////

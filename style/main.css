@@ -580,6 +580,86 @@ body {
 .header .header__container .menu__body .menu__list li .menu__sub-list li .menu__sub-link:hover {
   color: white;
 }
+.swiper-slider {
+  margin: 25px 0px 25px 0px;
+  background-color: black;
+  color: white;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+.swiper-slider::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  box-shadow: inset 0 0 500px black;
+}
+.swiper-slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(../swiper-slider/img/light.png);
+  background-position: center -70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: key-light 3s ease-in-out infinite;
+}
+.swiper-slider h2 {
+  margin: 25px 25px;
+  text-align: center;
+}
+.swiper-slider .swiper-slider__wrapper {
+  padding: 50px 50px;
+}
+.swiper-slider .swiper-slider__wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(../swiper-slider/img/glow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: key-glow 1.7s ease-in-out infinite;
+}
+.swiper-slider video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+@keyframes key-light {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes key-glow {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li.element-show {
   opacity: 1;
   transform: translateX(0);
