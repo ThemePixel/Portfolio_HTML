@@ -88,7 +88,7 @@
     }
 
 
-
+  
     
     /////////////////////////////////////////header color ////////////////////////////////////////////////////////////////////////////  
         
@@ -198,7 +198,7 @@ images.forEach((image) => {
 //////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', function() {
 
-	const showSlider = new Swiper('.showcase-carousel', {
+	const swiper = new Swiper('.swiper-carousel', {
 		loop: true,
 		slidesPerView: 3,
 		speed: 1800,
@@ -211,8 +211,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	document.querySelector('video').playbackRate = 2
 
-})
+});
 
+    
 //////////////////////////////////////3d slider with swiper slider///////////////////////////////////////////////////////
 
 
