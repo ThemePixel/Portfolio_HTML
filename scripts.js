@@ -204,8 +204,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		speed: 1800,
 		centeredSlides: true,
 		navigation: {
-			nextEl: '.next__arrow',
-			prevEl: '.prev__arrow'
+			nextEl: '.swiper-slider__navigation-next',
+			prevEl: '.swiper-slider__navigation-prev'
 		}
 	})
 
