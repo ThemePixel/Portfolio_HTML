@@ -1117,28 +1117,35 @@ body {
     --main-radius:5px;
     
 }
+::-webkit-input-placeholder {
+    color: #ffffff;
+ }
 
 
-
-
+footer{
+    background-color: #92003B;
     .footer__container{
-        background-color: #92003B;
+        max-width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        padding: 108px 48px 96px;
         color: white;
         display: grid;
         height: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 310px;
+        grid-template-rows: 1fr 1fr 0.1fr 0.1fr;
         grid-gap: 0.2rem;
+        
         grid-template-areas: 
-            "column__footer-one column__footer-two column__footer-three column__footer-four paragraph__footer"
-            "column__footer-one column__footer-two column__footer-three column__footer-four subscribe__footer"
-            "column__footer-one column__footer-two column__footer-three column__footer-four follow__footer"
-            "column__footer-one column__footer-two column__footer-three column__footer-four copyright__footer";
+            "column__footer-one column__footer-four column__footer-three column__footer-two paragraph__footer"
+            "column__footer-one column__footer-four column__footer-three column__footer-two subscribe__footer"
+            "column__footer-one column__footer-five column__footer-three column__footer-two follow__footer"
+            "column__footer-one column__footer-five column__footer-three column__footer-two copyright__footer";
         a{
             color: white;
             font-size: 14px;
             font-weight: 400;
-            line-height: 2.7em;
             letter-spacing: -.28px;
         }
         h4{
@@ -1161,49 +1168,97 @@ body {
             
 
     .column__footer-one{
-        text-align: center;
+       // background: @1;
+        
         grid-area: column__footer-one;
     }
     .column__footer-two{
-        text-align: center;
+       // background: @2;
+        
         grid-area: column__footer-two;
         grid-auto-rows: 40px;
     }
     .column__footer-three{
-        text-align: center;
+       // background: @3;
+        
         grid-area: column__footer-three;
         grid-auto-rows: 40px;
     }
     .column__footer-four{
-        text-align: center;
+       // background: @4;
+        
         grid-area: column__footer-four;
     }
+    .column__footer-five{
+        //background: greenyellow;
+        grid-area: column__footer-five;
+    }
     .paragraph__footer{
-        text-align: center;
+       // background: @5;
+        
         grid-area: paragraph__footer;
     }
     .subscribe__footer{
-        .subscribe__footer-heading{
-            text-align: center;
-        }
+        
+       
         .subscribe__footer-input{
             display: flex;
-
+            border-style: solid;
+            border-width: 1px;
+            border-color: #fff;
+            input{
+                width: 180%;
+                border-width:0px;
+                border:none;
+                background-color: #92003B;
+                
+            }
+            
+            .subscribe__footer__button{
+                width: 100%;
+                .subscribe__footer-button{
+                    font-size: 13px;
+                    line-height: 42px;
+                    border-style: solid;
+                    border-width: 0;
+                    border-radius: 0 0 0 0;
+                    padding: 0;
+                    background-color: #FF7BE5;
+                    width: 100%;
+                    color: #92003B;
+                }
+            }
+            
+        
         }
+       // background: @6;
         justify-content: center;
         grid-area: subscribe__footer;
         }
     .follow__footer{
-        text-align: center;
+        
         grid-area: follow__footer;
+        .follow__footer-icons{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        a{
+            
+            img{
+                height: 2rem;
+                font-size: 3.75em;
+            }
         }
+    }
+    }
     .copyright__footer{
-        text-align: center;
+       // background: @8;
+        
         grid-area: copyright__footer;
     }
 }
     
-
+}
 
 
 
