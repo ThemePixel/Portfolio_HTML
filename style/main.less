@@ -1122,115 +1122,87 @@ body {
 
 
     .footer__container{
-       
-        .flex_center{
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           padding: 20px 20px;
-        }
+        background-color: #92003B;
+        color: white;
         display: grid;
         height: 100%;
-        grid-template-columns: 1fr 0.6fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        
-        grid-template-areas: 
-            "grid__container nav__section__one nav__section__two paragraph__section"
-            "grid__container nav__section__one nav__section__two paragraph__section"
-            "grid__container nav__section__one nav__section__two subscribe__section"
-            "grid__container nav__section__one nav__section__two subscribe__section"
-            "grid__container nav__section__one nav__section__two follow_us_container"
-            "grid__container nav__section__one nav__section__two follow_us_container"
-            "grid__container nav__section__three nav__section__three nav__section__three"
-            "grid__container nav__section__three nav__section__three nav__section__three"
-            "copyright__section copyright__section copyright__section copyright__section";
-
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 0.2rem;
-        
-        
-    }
-    .grid__container{
-        background: @6;
-        grid-area: grid__container;
-        border-radius: var(--main-radius);
-        
-
-    }
-
-    .nav__section__one{
-        text-align: center;
-        background: #CEAB93;
-        grid-area: nav__section__one;
-        border-radius: var(--main-radius);
-        
-        grid-auto-rows: 40px;
-    
+        grid-template-areas: 
+            "column__footer-one column__footer-two column__footer-three column__footer-four paragraph__footer"
+            "column__footer-one column__footer-two column__footer-three column__footer-four subscribe__footer"
+            "column__footer-one column__footer-two column__footer-three column__footer-four follow__footer"
+            "column__footer-one column__footer-two column__footer-three column__footer-four copyright__footer";
+        a{
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 2.7em;
+            letter-spacing: -.28px;
+        }
+        h4{
+            color: #FF7BE5;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            line-height: 1.6em;
+            font-family: 'Roboto';
+        }  
+        p{
+            font-size: 14px;
+            line-height: 1.6em;
+            font-family: 'Roboto';
+        } 
+        .column{
+            display: flex;
+            flex-direction: column;
+        } 
             
-        
-    }
-    .nav__section__two{
+
+    .column__footer-one{
         text-align: center;
-        background: #AD8B73;
-        grid-area: nav__section__two;
-        border-radius: var(--main-radius);
-        
+        grid-area: column__footer-one;
+    }
+    .column__footer-two{
+        text-align: center;
+        grid-area: column__footer-two;
         grid-auto-rows: 40px;
     }
-    .nav__section__three{
+    .column__footer-three{
         text-align: center;
-        background: #AD8B73;
-        grid-area: nav__section__three;
-        border-radius: var(--main-radius);
-        
+        grid-area: column__footer-three;
+        grid-auto-rows: 40px;
     }
-    .paragraph__section{
+    .column__footer-four{
         text-align: center;
-        background: #C3B091;
-        grid-area: paragraph__section;
-        border-radius: var(--main-radius);
-        
+        grid-area: column__footer-four;
     }
-    .subscribe__section{
-        .footer-heading{
+    .paragraph__footer{
+        text-align: center;
+        grid-area: paragraph__footer;
+    }
+    .subscribe__footer{
+        .subscribe__footer-heading{
             text-align: center;
         }
-        .subscribe__button{
+        .subscribe__footer-input{
             display: flex;
 
         }
         justify-content: center;
-        background: #FFEDDB;
-        grid-area: subscribe__section;
-        border-radius: var(--main-radius);
-        
-    }
-    .follow_us_container{
-        
-
-       
-
-
-        text-align: center;
-        background: #DBE2EF;
-        grid-area: follow_us_container;
-        border-radius: var(--main-radius);
-        
-    }
-    .copyright__section{
-        
-        text-align: center;
-        background: @5;
-        grid-area: copyright__section;
-        border-radius: var(--main-radius);
-        
-    }
-
-    .footer__listmenu{
-        li{
-            margin-bottom: 30px;
+        grid-area: subscribe__footer;
         }
+    .follow__footer{
+        text-align: center;
+        grid-area: follow__footer;
+        }
+    .copyright__footer{
+        text-align: center;
+        grid-area: copyright__footer;
     }
+}
+    
 
 
 
@@ -1319,27 +1291,12 @@ body {
 //////////////////////////////////////grid////////////////////////////////////////////////////////////////grid////////////////////////////////////////////////////////////////grid//////////////////////////
 //////////////////////////////////////grid//////////////////////////
 
-.footer-heading{
-    
-    margin-bottom: 25px;
-    font-size: 21px;
-    font-weight: 600;
-}
 
 
 
 /////////////////////////////////////////////////////////////footer start////////////////////////////////////////////////////////////
 
-    .copyright__section{
-        
-        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
+    
 
 ///////////////////parallax section//////////////////////////////
  
@@ -1349,45 +1306,7 @@ body {
 
 
 ///////////////////////////////////////////////////////////footer end////////////////////////////////////////////////////////////
-.inverted code{
-    display: none;
-}
-code {
-    
-    
-    margin-top: 132px;
-    width: 15vw;
-    position: absolute;
-    
-    transform: translateY(-50%);
-    
-    
-    
-    z-index: 3;
 
-
-P {
-    font-family: "Share Tech Mono", monospace;
-    color: #f5f5f5;
-    margin: 0 0 10px;
-    font-size: 6px;
-    line-height: 1.2;
-}
-
-span {
-    color: #f0c674;
-}
-
-i {
-    color: #8abeb7;
-}
-
-
-
-b {
-    color: #81a2be;
-}
-}
 
 
 
