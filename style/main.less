@@ -669,6 +669,19 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
     }
 }
 
+@media only screen and (max-width: 1900px){
+    .swiper-slider .swiper-slider__wrapper .swiper-slider__container .swiper-slider__navigation .swiper-slider__navigation-next::before{
+        right: 15px;
+        font-size: 30px;
+    }
+    .swiper-slider .swiper-slider__wrapper .swiper-slider__container .swiper-slider__navigation .swiper-slider__navigation-prev::before{
+        left: 15px;
+        font-size: 30px;
+    }
+    .swiper-slider .swiper-slider__header{
+        font-size: 25px;
+    }
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -830,7 +843,27 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
     }
 }
 
-
+@media only screen and (max-width: 1900px){
+    .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul{
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 5px;
+        grid-template-areas:
+            "one "
+            "two "
+            "three "
+            "four "
+            "five "
+            "six";
+        }
+        .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li{
+            height: 350px;
+            width: 100%;
+        }
+}
 //////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
 
 
