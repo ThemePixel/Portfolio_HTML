@@ -631,7 +631,7 @@ body .inverted .header__container {
     padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 5px;
     column-gap: 5px;
     grid-template-areas: "one " "two " "three " "four " "five " "six";
@@ -639,6 +639,24 @@ body .inverted .header__container {
   .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li {
     height: 350px;
     width: 100%;
+  }
+  .loading-lazy__section .loading-lazy__container .loading-lazy__box {
+    padding: 77px 5px 5px 5px;
+  }
+  .loading-lazy__section .loading-lazy__container .loading-lazy__box h2 {
+    font-size: 22px;
+    left: 0;
+    margin: 10px;
+  }
+  .loading-lazy__section .loading-lazy__container .loading-lazy__box h1 {
+    top: 50px;
+    left: 10px;
+  }
+  .swiper-slider {
+    margin: 5px 0px 5px 0px;
+  }
+  .loading-lazy__section {
+    margin-bottom: 5px;
   }
 }
 .elements__section-grid {
