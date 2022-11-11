@@ -23,6 +23,7 @@ html,
 body {
   /* Убирает прокрутку по горизонтале, для мобильной версии */
   overflow-x: hidden;
+  background-color: #F08A5D;
 }
 html {
   box-sizing: border-box;
@@ -519,10 +520,6 @@ body .inverted .header__container {
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li.element-show {
   opacity: 1;
   transform: translateX(0);
-}
-.loading-lazy__section {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 .loading-lazy__section .loading-lazy__container {
   width: 1800px;
