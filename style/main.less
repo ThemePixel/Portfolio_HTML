@@ -23,6 +23,9 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
+
  
 @import "reset.css";
 
@@ -271,19 +274,8 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
 
 
 
-  
-  *,
-  *::before,
-  *::after{
-    box-sizing: border-box;
-  }
-  
-  body{
-    background-color: #1D1E22;
-    margin: 0;
-    padding: 0;  
-  }
-  
+ 
+ 
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -405,10 +397,9 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
     }
 
 //////////////////////////////////////3d slider with swiper slider///////////////////////////////////////////////////////
-
 .header__img{
     width: 100vw;
-    height: 103vh;
+    height: 100vh;
     max-width: 100%;
     position: relative;
     display: flex;
@@ -416,16 +407,27 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
     align-items: center;
     overflow: hidden;
     .header__img-container{
-        background: url(../img/image__one.jpg) no-repeat 50% -190px / cover;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
         position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: url(../img/image__one.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
-        
-    
+
+
+
+
+
+
+
+
+ 
+ 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 .swiper-slider{
     margin: 25px 0px 25px 0px;
@@ -871,11 +873,6 @@ body._mobile .menu__list > li._active .menu__sub-list{
 }
 
 //////////////////////deer section///////////////////////////////
-body {
-    margin: 0;
-    height: 100vn;
-    background: white;
-}
 
 .container{
     width: 100%;

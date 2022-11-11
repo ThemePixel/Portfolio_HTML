@@ -181,16 +181,6 @@ body .inverted .header__container {
   transform: translate3d(0, -100%, 0);
   transition: 0.3s all;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-body {
-  background-color: #1D1E22;
-  margin: 0;
-  padding: 0;
-}
 @media only screen and (max-width: 314px) {
   .header__container {
     flex-direction: column;
@@ -283,7 +273,7 @@ body {
 }
 .header__img {
   width: 100vw;
-  height: 103vh;
+  height: 100vh;
   max-width: 100%;
   position: relative;
   display: flex;
@@ -292,12 +282,15 @@ body {
   overflow: hidden;
 }
 .header__img .header__img-container {
-  background: url(../img/image__one.jpg) no-repeat 50% -190px / cover;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(../img/image__one.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .swiper-slider {
   margin: 25px 0px 25px 0px;
@@ -651,11 +644,6 @@ body._mobile .menu__list > li._active .menu__sub-list {
   visibility: visible;
   transform: translate(0px, 0px);
   pointer-events: all;
-}
-body {
-  margin: 0;
-  height: 100vn;
-  background: white;
 }
 .container {
   width: 100%;
