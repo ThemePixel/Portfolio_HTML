@@ -563,7 +563,7 @@ body .inverted .header__container {
   margin: 0 auto;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box {
-  padding: 85px 20px;
+  padding: 85px 20px 20px 20px;
   background: #112D4E;
   position: relative;
 }
