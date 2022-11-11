@@ -542,6 +542,7 @@ body .inverted .header__container {
   transform: translateX(0);
 }
 .loading-lazy__section {
+  position: relative;
   margin-bottom: 25px;
 }
 .loading-lazy__section .loading-lazy__container {
@@ -549,20 +550,31 @@ body .inverted .header__container {
   margin: 0 auto;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box {
+  padding: 85px 20px;
   background: #112D4E;
   position: relative;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box h2 {
+  position: absolute;
+  font-size: 32px;
+  color: white;
+  top: 0;
+  left: 40%;
+  margin: 20px;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box h1 {
   color: white;
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 97px;
+  left: 20px;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
+  padding-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 0.2rem;
+  row-gap: 20px;
+  column-gap: 20px;
   grid-template-areas: "one two three four" "five six seven eight";
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .one {
@@ -591,11 +603,9 @@ body .inverted .header__container {
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li {
   background: url("../img/logo.gif") center / 50px no-repeat;
-  margin-right: 30px;
   box-shadow: 0 0 8px #000000;
-  width: 300px;
-  height: 340px;
-  border: 2px solid #00ADB5;
+  height: 430px;
+  border: 2px solid #F08A5D;
   opacity: 0;
   transform: translateX(100px);
   transition: 1800ms ;
@@ -603,6 +613,7 @@ body .inverted .header__container {
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li:last-child {
   margin: 0;
@@ -687,94 +698,6 @@ body._mobile .menu__list > li._active .menu__sub-list {
   visibility: visible;
   transform: translate(0px, 0px);
   pointer-events: all;
-}
-.container {
-  width: 100%;
-  text-align: center;
-  background: #EEEEEE;
-}
-.container .svg__deer-container {
-  height: 1px;
-}
-.container .content h1 {
-  font-size: 3em;
-  margin-top: 1em;
-}
-.container .content p {
-  font-size: 22px;
-  width: 50%;
-  margin: 20px auto;
-}
-.deer {
-  clip-path: url(#deermask);
-  width: 40%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  transform: rotate(100deg);
-  animation: deer 5s infinite alternate-reverse ease-in-out;
-}
-.deer-container {
-  position: relative;
-}
-.deer__logo1,
-.deer__logo2,
-.deer__logo3 {
-  position: absolute;
-  filter: drop-shadow(22px -12px 7px rgba(0, 0, 0, 0.5));
-}
-.deer__logo1 {
-  top: 20%;
-  left: 29%;
-  width: 5%;
-  transform: rotate(100deg);
-  animation: deer__logo1 5s infinite alternate-reverse;
-}
-.deer__logo2 {
-  top: 34%;
-  left: 28%;
-  width: 3%;
-  transform: rotate(110deg);
-  animation: deer__logo2 2s infinite alternate-reverse ease-in-out;
-}
-.deer__logo3 {
-  top: 40%;
-  left: 55%;
-  width: 3%;
-  transform: rotate(210deg);
-  filter: drop-shadow(-22px -12px 7px rgba(0, 0, 0, 0.5));
-  animation: deer__logo3 8s infinite alternate-reverse ease-in-out;
-}
-@keyframes deer__logo1 {
-  from {
-    transform: translateY(20px) rotate(100deg);
-  }
-  to {
-    transform: translateY(0px) rotate(120deg);
-  }
-}
-@keyframes deer__logo2 {
-  from {
-    transform: translateY(0px) rotate(110deg);
-  }
-  to {
-    transform: translateY(10px) rotate(90deg);
-  }
-}
-@keyframes deer__logo3 {
-  from {
-    transform: translateY(30px) rotate(210deg);
-  }
-  to {
-    transform: translateY(0px) rotate(230deg);
-  }
-}
-@keyframes deer {
-  from {
-    transform: translateY(20px) rotate(100deg);
-  }
-  to {
-    transform: translateY(0px) rotate(120deg);
-  }
 }
 .grid__container {
   background: #f1efe9;
