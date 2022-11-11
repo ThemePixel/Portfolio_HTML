@@ -274,7 +274,7 @@ body .inverted .header__container {
 }
 .header__img {
   width: 100vw;
-  height: 100vh;
+  height: 103vh;
   max-width: 100%;
   position: relative;
   display: flex;
@@ -283,15 +283,35 @@ body .inverted .header__container {
   overflow: hidden;
 }
 .header__img .header__img-container {
-  position: absolute;
+  background: url(../img/image__one.jpg) no-repeat 50% -190px / cover;
+  height: 100%;
+  width: 100%;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
-  background-image: url(../img/image__one.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: absolute;
+}
+@media only screen and (max-width: 1900px) {
+  .header__img {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .header__img .header__img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../img/image__one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .swiper-slider {
   margin: 25px 0px 25px 0px;
