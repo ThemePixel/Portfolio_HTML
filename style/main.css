@@ -541,8 +541,11 @@ body .inverted .header__container {
   opacity: 1;
   transform: translateX(0);
 }
+.loading-lazy__section {
+  margin-bottom: 25px;
+}
 .loading-lazy__section .loading-lazy__container {
-  width: 1800px;
+  width: 100%;
   margin: 0 auto;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box {
@@ -551,9 +554,10 @@ body .inverted .header__container {
   position: relative;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box h1 {
+  color: white;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 25px;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
   height: 367px;
