@@ -571,11 +571,11 @@ body .inverted .header__container {
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
   padding-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 20px;
   column-gap: 20px;
-  grid-template-areas: "one two three four" "five six seven eight";
+  grid-template-areas: "one two three " "four five six ";
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .one {
   grid-area: one;
@@ -595,16 +595,11 @@ body .inverted .header__container {
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .six {
   grid-area: six;
 }
-.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .seven {
-  grid-area: seven;
-}
-.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .eight {
-  grid-area: eight;
-}
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li {
   background: url("../img/logo.gif") center / 50px no-repeat;
   box-shadow: 0 0 8px #000000;
-  height: 430px;
+  width: 607px;
+  height: 360px;
   border: 2px solid #F08A5D;
   opacity: 0;
   transform: translateX(100px);

@@ -189,40 +189,45 @@
     </section>
 
     <section class="loading-lazy__section">
-      
+      <script type="text/javascript">
+        (function() {
+        
+        var img = document.getElementById('container').firstChild;
+        img.onload = function() {
+            if(img.height > img.width) {
+                img.height = '100%';
+                img.width = 'auto';
+            }
+        };
+        
+        }());
+        </script>
       <div class="loading-lazy__container">
         
         <div class="loading-lazy__box">
           <h2>My previous recent works:</h2>
-            
-          
-          <h1>Lazy Loading Images with JavaScript Intersection Observer +<br>
+            <h1>Lazy Loading Images with JavaScript Intersection Observer +<br>
             Reveal Elements On Scroll JavaScript Intersection Observer</h1>
-          <div  class="loading-lazy__ul">
-            <div  class="loading-lazy__li one ">
-              <img class="imglazy" data-src="img/image__three.jpg" src="img/1x1.png" alt="some-image">
+          <div class="loading-lazy__ul">
+            <div id="container" class="loading-lazy__li one ">
+              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/psd_slide.jpg" src="img/1x1.png" alt="some-image"></a>
             </div >
-            <div  class="loading-lazy__li two ">
-              <img class="imglazy" data-src="img/image__three.jpg" src="img/1x1.png" alt="some-image">
+            <div id="container" class="loading-lazy__li two ">
+              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/portfolio.jpg" src="img/1x1.png" alt="some-image"></a>
             </div >
-            <div  class="loading-lazy__li three ">
-              <a href="https://themepixel.github.io/PSDtoHTML.WITH.LESS.CSS.EXOTICO./"><img class="imglazy" data-src="img/psd_slide.jpg" src="img/1x1.png" alt="some-image"></a>
+            <div id="container" class="loading-lazy__li three">
+              <a href="https://themepixel.github.io/PSDtoHTML.WITH.LESS.CSS.EXOTICO./"><img class="imglazy" data-src="img/invok.jpg" src="img/1x1.png" alt="some-image"></a>
             </div >
-            <div  class="loading-lazy__li four ">
-              <img class="imglazy" data-src="img/image__three.jpg" src="img/1x1.png" alt="some-image">
+            <div id="container" class="loading-lazy__li four ">
+              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/menu.jpg" src="img/1x1.png" alt="some-image"></a>
             </div >
-            <div  class="loading-lazy__li five ">
-              <img class="imglazy" data-src="img/image__three.jpg" src="img/1x1.png" alt="some-image">
+            <div id="container" class="loading-lazy__li five ">
+              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/menuu.jpg" src="img/1x1.png" alt="some-image"></a>
             </div >
-            <div  class="loading-lazy__li six ">
-              <img class="imglazy" data-src="img/image__three.jpg" src="img/1x1.png" alt="some-image">
+            <div id="container" class="loading-lazy__li six ">
+              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/por men.jpg" src="img/1x1.png" alt="some-image"></a>
             </div >
-            <div  class="loading-lazy__li seven ">
-              <img class="imglazy" data-src="img/image__three.jpg" src="img/1x1.png" alt="some-image">
-            </div >
-            <div  class="loading-lazy__li eight ">
-              <img class="imglazy" data-src="img/image__three.jpg" src="img/1x1.png" alt="some-image">
-            </div >
+            
           </div >
         </div>
       </div>

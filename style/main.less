@@ -771,13 +771,13 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
             .loading-lazy__ul{
                 padding-top: 60px;
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr; 
                 row-gap: 20px;
                 column-gap: 20px;  
                 grid-template-areas: 
-                    "one two three four"
-                    "five six seven eight";
+                    "one two three "
+                    "four five six ";
 
 
                 .one{
@@ -804,20 +804,13 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                     grid-area: six;
                     
                 }
-                .seven{
-                    grid-area: seven;
-                    
-                }
-                .eight{
-                    grid-area: eight;
-                   
-                }
+                
                 .loading-lazy__li{
                     
                     background: url("../img/logo.gif") center / 50px no-repeat;
                     box-shadow: 0 0 8px rgb(0 0 0);
-                    
-                    height: 430px;
+                    width: 607px;
+                    height: 360px;
                     border: 2px solid @9;
                     opacity: 0;
                     transform: translateX(100px);    
