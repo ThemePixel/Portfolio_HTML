@@ -191,6 +191,11 @@ body {
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 314px) {
+  .header__container {
+    flex-direction: column;
+  }
+}
 .header {
   transition: 0.3s all;
   position: fixed;
