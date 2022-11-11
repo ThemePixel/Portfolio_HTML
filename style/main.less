@@ -18,7 +18,10 @@
 	--transition: cubic-bezier(.4, 0, 0, 1);
 }
 
-
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
 
  
 @import "reset.css";
@@ -286,6 +289,9 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
 ///////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////
 //////////////////////////////////////////////////////////
+    
+    
+
     .header{
         transition: 0.3s all;
         position: fixed;
@@ -296,7 +302,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
     
         .header__container{
             transition: height .5s ease;
-            border-bottom: 2px solid rgba(255,255,255,.05);
+            
             max-width: 1200px;
             margin: 0px auto;
             display: flex; 
@@ -1417,8 +1423,16 @@ footer{
 
 @media only screen and (max-width: 1900px){
    
-
-    
+    ._mobile .header .header__container{
+        height: 4rem;
+        background-color: black;
+        opacity: 0.9;
+    }
+    .scroll-up .header .header__container{
+        height: 4rem;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.9;
+    }   
  
     .container{
         width: 100%;
@@ -1430,7 +1444,7 @@ footer{
     }
     ._lock .inverted .menu__body::before{
         background-color: @4;
-        height: 70px; 
+        height: 64px; 
         
     }
 
@@ -1594,7 +1608,7 @@ body .header .header__container .menu__body .menu__list > li._active .menu__sub-
         width: 100%;
         top: 0;
         left: 0;
-        height: 125px;
+        height: 64px;
         z-index: 2;
         }
     .menu__list{
@@ -1689,7 +1703,7 @@ body .footer__container .paragraph__section{
 
    
     ._mobile .menu__body .menu__list {
-        margin-top: 39px;
+        margin-top: -28px;
     }
     ._mobile .header .header__container .menu__body .menu__list li .menu__link {
         padding: 8px 0px;

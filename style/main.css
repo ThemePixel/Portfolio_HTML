@@ -19,6 +19,11 @@
   --padding: 120px;
   --transition: cubic-bezier(0.4, 0, 0, 1);
 }
+html,
+body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
 html {
   box-sizing: border-box;
 }
@@ -196,7 +201,6 @@ body {
 }
 .header .header__container {
   transition: height 0.5s ease;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
   max-width: 1200px;
   margin: 0px auto;
   display: flex;
@@ -1038,6 +1042,16 @@ footer .footer__container .copyright__footer {
   }
 }
 @media only screen and (max-width: 1900px) {
+  ._mobile .header .header__container {
+    height: 4rem;
+    background-color: black;
+    opacity: 0.9;
+  }
+  .scroll-up .header .header__container {
+    height: 4rem;
+    background-color: #ffffff;
+    opacity: 0.9;
+  }
   .container {
     width: 100%;
   }
@@ -1046,7 +1060,7 @@ footer .footer__container .copyright__footer {
   }
   ._lock .inverted .menu__body::before {
     background-color: #EEEEEE;
-    height: 70px;
+    height: 64px;
   }
   ._lock .header.inverted .header__container .header__logo .logo__text {
     color: #000000;
@@ -1186,7 +1200,7 @@ footer .footer__container .copyright__footer {
     width: 100%;
     top: 0;
     left: 0;
-    height: 125px;
+    height: 64px;
     z-index: 2;
   }
   .menu__body .menu__list {
@@ -1241,7 +1255,7 @@ footer .footer__container .copyright__footer {
     grid-template-areas: "one header " "one three " "two three " "content content ";
   }
   ._mobile .menu__body .menu__list {
-    margin-top: 39px;
+    margin-top: -28px;
   }
   ._mobile .header .header__container .menu__body .menu__list li .menu__link {
     padding: 8px 0px;
