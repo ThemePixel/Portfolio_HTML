@@ -314,7 +314,7 @@ body .inverted .header__container {
   }
 }
 .swiper-slider {
-  margin: 25px 0px 25px 0px;
+  margin: 20px 0px 20px 0px;
   background-color: black;
   color: white;
   position: relative;
@@ -556,7 +556,7 @@ body .inverted .header__container {
 }
 .loading-lazy__section {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .loading-lazy__section .loading-lazy__container {
   width: 100%;
