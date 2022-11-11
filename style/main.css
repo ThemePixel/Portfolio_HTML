@@ -550,22 +550,44 @@ body .inverted .header__container {
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box {
   background: #112D4E;
-  padding-top: 35px;
   position: relative;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box h1 {
   color: white;
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 25px;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
-  height: 367px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.2rem;
+  grid-template-areas: "one two three four" "five six seven eight";
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .one {
+  grid-area: one;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .two {
+  grid-area: two;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .three {
+  grid-area: three;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .four {
+  grid-area: four;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .five {
+  grid-area: five;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .six {
+  grid-area: six;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .seven {
+  grid-area: seven;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .eight {
+  grid-area: eight;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li {
   background: url("../img/logo.gif") center / 50px no-repeat;

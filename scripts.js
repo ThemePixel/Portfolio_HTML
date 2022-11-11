@@ -156,6 +156,7 @@ let options = {threshold: [0.2] };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.loading-lazy__li');
 
+
 for (let elm of elements) {
     observer.observe(elm);
 }
