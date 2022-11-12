@@ -1147,8 +1147,9 @@ body._mobile .menu__list > li._active .menu__sub-list{
 
 footer{
     background-color: #92003B;
+    overflow: hidden;
     .footer__container{
-        max-width: 1600px;
+        max-width: 1440px;
         margin-right: auto;
         margin-left: auto;
         position: relative;
@@ -1162,16 +1163,19 @@ footer{
         
         grid-template-areas: 
             "column__footer-one column__footer-four column__footer-three column__footer-two paragraph__footer"
-            "column__footer-one column__footer-four column__footer-three column__footer-two subscribe__footer"
+            "column__footer-one column__footer-five column__footer-three column__footer-two subscribe__footer"
             "column__footer-one column__footer-five column__footer-three column__footer-two follow__footer"
             "column__footer-one column__footer-five column__footer-three column__footer-two copyright__footer";
         a{
             color: white;
             font-size: 14px;
             font-weight: 400;
+            line-height: 2.7em;
             letter-spacing: -.28px;
+            text-transform: capitalize;
         }
         h4{
+            padding-bottom: 32px;
             color: #FF7BE5;
             font-size: 20px;
             font-weight: 600;
@@ -1222,15 +1226,36 @@ footer{
         grid-area: paragraph__footer;
     }
     .subscribe__footer{
+        .subscribe__footer-email{
+            margin: 17px 0 0;
+            p{
+                font-size: 14px;
+                line-height: 1.6em;
+                
+            }
+            strong{
+                font-size: 14px;
+                line-height: 1.6em;
+            }
+
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.6em;
         
-       
+        }
+        strong{
+            font-size: 14px;
+            line-height: 1.6em;
+        }
         .subscribe__footer-input{
             display: flex;
             border-style: solid;
             border-width: 1px;
             border-color: #fff;
             input{
-                width: 180%;
+                text-indent: 10px;
+                width: 230%;
                 border-width:0px;
                 border:none;
                 background-color: #92003B;
@@ -1249,6 +1274,10 @@ footer{
                     background-color: #FF7BE5;
                     width: 100%;
                     color: #92003B;
+                    &:hover{
+                        background-color: #F9ADEA;
+                        cursor: pointer;
+                    }
                 }
             }
             
@@ -1262,20 +1291,30 @@ footer{
         
         grid-area: follow__footer;
         .follow__footer-icons{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
+        
         a{
-            
-            img{
-                height: 2rem;
-                font-size: 3.75em;
+            padding-right: 10px;
+            &:last-child{
+                padding-right: 0;
+            }
+            svg{
+                
+                height: 20px;
+                width: 20px;
+                fill:white;
+                
             }
         }
     }
     }
     .copyright__footer{
-       // background: @8;
+       p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2.7em;
+        letter-spacing: -.28px;
+        text-transform: capitalize;
+       }
         
         grid-area: copyright__footer;
     }
