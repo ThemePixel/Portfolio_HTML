@@ -963,6 +963,7 @@ footer .footer__container .subscribe__footer .subscribe__footer-input input {
   border-width: 0px;
   border: none;
   background-color: #92003B;
+  color: white;
 }
 footer .footer__container .subscribe__footer .subscribe__footer-input .subscribe__footer__button {
   width: 100%;
@@ -1388,4 +1389,55 @@ footer .footer__container .copyright__footer p {
   .grid__container .content a span {
     margin-top: 22px;
   }
+}
+.accordion__section {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "one" "two" "three" "four";
+}
+.accordion__section .one {
+  grid-area: one;
+}
+.accordion__section .two {
+  grid-area: two;
+}
+.accordion__section .three {
+  grid-area: three;
+}
+.accordion__section .four {
+  grid-area: four;
+}
+.accordion__section .accordion__section-container {
+  width: 800px;
+  height: 200px;
+}
+.accordion__section .accordion__section-container .accordion__section-title {
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  background-color: #251B37;
+  color: white;
+}
+.accordion__section .accordion__section-container .accordion__section-title::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 1.5em;
+  transform: translateY(-50%);
+}
+.accordion__section .accordion__section-container .accordion__section-description {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  background-color: #222831;
+  color: white;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.accordion__section-container.active .accordion__section-description {
+  height: 150px;
+  padding: 10px;
 }

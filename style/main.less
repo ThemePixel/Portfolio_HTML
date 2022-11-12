@@ -1276,7 +1276,7 @@ footer{
                 border-width:0px;
                 border:none;
                 background-color: #92003B;
-                
+                color: white;
             }
             
             .subscribe__footer__button{
@@ -1879,8 +1879,65 @@ body .footer__container .paragraph__section{
 
 
 
+.accordion__section{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four";
+    .one{
+        grid-area: one;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+    }
+    .four{
+        grid-area: four;
+    }
+    .accordion__section-container{
+        width: 800px;
+        height: 200px;
+        
+        
+        .accordion__section-title{
+            height: 40px;
+            cursor: pointer;
+            position: relative;
+            background-color: @6;
+            color: white;
+            &::before{
+                content: "+";
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                font-size: 1.5em;
+                transform: translateY(-50%);
+            }
 
+        }
+        .accordion__section-description{
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            background-color: @1;
+            color: white;
+            transition: 0.5s;
+            overflow-y: auto;
+        }    
+    }
+}
+.accordion__section-container.active .accordion__section-description{
+    height: 150px;
+    padding: 10px;
 
+}
 
 
 
