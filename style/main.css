@@ -861,7 +861,7 @@ footer .footer__container {
   grid-template-columns: 1fr 1fr 1fr 1fr 310px;
   grid-template-rows: 1fr 1fr 0.1fr 0.1fr;
   grid-gap: 0.2rem;
-  grid-template-areas: "column__footer-one column__footer-four column__footer-three column__footer-two paragraph__footer" "column__footer-one column__footer-five column__footer-three column__footer-two subscribe__footer" "column__footer-one column__footer-five column__footer-three column__footer-two follow__footer" "column__footer-one column__footer-five column__footer-three column__footer-two copyright__footer";
+  grid-template-areas: "column__footer-one column__footer-two column__footer-four column__footer-five paragraph__footer" "column__footer-one column__footer-three column__footer-four column__footer-five subscribe__footer" "column__footer-one column__footer-three column__footer-four column__footer-five follow__footer" "column__footer-one column__footer-three column__footer-four column__footer-five copyright__footer";
 }
 footer .footer__container a {
   color: white;
@@ -969,7 +969,7 @@ footer .footer__container .follow__footer {
   grid-area: follow__footer;
 }
 footer .footer__container .follow__footer .follow__footer-icons a {
-  padding-right: 10px;
+  padding-right: 13px;
 }
 footer .footer__container .follow__footer .follow__footer-icons a:last-child {
   padding-right: 0;
