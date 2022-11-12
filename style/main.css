@@ -14,6 +14,12 @@
   font-weight: 700;
   font-style: italic;
 }
+@font-face {
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2");
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: Sans-serif;
+}
 :root {
   --accent: #CC8869;
   --padding: 120px;
@@ -874,7 +880,7 @@ footer .footer__container h4 {
   line-height: 1.6em;
   font-family: 'Roboto';
 }
-footer .footer__container p {
+footer .footer__container .paragraph__footer-p {
   font-size: 14px;
   line-height: 1.6em;
   font-family: 'Roboto';
@@ -907,24 +913,22 @@ footer .footer__container .subscribe__footer {
   justify-content: center;
   grid-area: subscribe__footer;
 }
+footer .footer__container .subscribe__footer .subscribe__footer-placeholder {
+  margin-top: -15px;
+}
 footer .footer__container .subscribe__footer .subscribe__footer-email {
   margin: 17px 0 0;
 }
 footer .footer__container .subscribe__footer .subscribe__footer-email p {
+  font-family: dm sans, Sans-serif;
   font-size: 14px;
   line-height: 1.6em;
 }
-footer .footer__container .subscribe__footer .subscribe__footer-email strong {
+footer .footer__container .subscribe__footer .subscribe__footer-email strong a {
+  font-family: dm sans, Sans-serif;
   font-size: 14px;
   line-height: 1.6em;
-}
-footer .footer__container .subscribe__footer p {
-  font-size: 14px;
-  line-height: 1.6em;
-}
-footer .footer__container .subscribe__footer strong {
-  font-size: 14px;
-  line-height: 1.6em;
+  text-transform: capitalize;
 }
 footer .footer__container .subscribe__footer .subscribe__footer-input {
   display: flex;
