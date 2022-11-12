@@ -657,10 +657,20 @@ body .inverted .header__container {
     font-size: 22px;
     left: 0;
     margin: 10px;
+    color: #FF7BE5;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.6em;
+    font-family: dm sans, Sans-serif;
   }
   .loading-lazy__section .loading-lazy__container .loading-lazy__box h1 {
-    top: 50px;
+    top: 62px;
     left: 10px;
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 1.6em;
+    padding-right: 10px;
   }
   .swiper-slider {
     margin: 5px 0px 5px 0px;
