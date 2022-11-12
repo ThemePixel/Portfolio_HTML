@@ -121,7 +121,7 @@ svg .draw {
   background-color: #EEEEEE;
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 20px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease;
@@ -137,7 +137,7 @@ svg .draw {
   background-color: black;
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 20px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease;
