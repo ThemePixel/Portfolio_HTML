@@ -40,12 +40,12 @@ html {
   box-sizing: inherit;
 }
 a {
-  font-family: 'Roboto';
+  font-family: dm sans, Sans-serif;
   text-decoration: none;
   color: #000;
 }
 h1 {
-  font-family: 'Roboto';
+  font-family: dm sans, Sans-serif;
   text-decoration: none;
   color: #000;
 }
@@ -125,6 +125,7 @@ svg .draw {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease;
+  font-family: dm sans, Sans-serif;
 }
 .logo__text:hover::after {
   transform: scaleX(1);
@@ -211,15 +212,18 @@ body .inverted .header__container {
   justify-content: space-between;
   height: 8rem;
 }
+.header .header__container .header__logo {
+  font-family: dm sans, Sans-serif;
+}
 .header .header__container .header__logo .logo__text {
   font-size: 36px;
   position: relative;
   z-index: 8;
   color: white;
   letter-spacing: 3px;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
+  font-family: dm sans, Sans-serif;
 }
 .header .header__container .menu__body .menu__list li {
   margin: 0px 0px 0px 60px;
@@ -242,6 +246,7 @@ body .inverted .header__container {
   align-items: center;
 }
 .header .header__container .menu__body .menu__list li .menu__link {
+  font-family: dm sans, Sans-serif;
   color: white;
   font-size: 18px;
   padding: 24px 0px;
@@ -264,6 +269,8 @@ body .inverted .header__container {
 .header .header__container .menu__body .menu__list li .menu__sub-list li .menu__sub-link__title {
   color: white;
   margin-top: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .header .header__container .menu__body .menu__list li .menu__sub-list li .menu__sub-link {
   display: flex;
@@ -271,7 +278,7 @@ body .inverted .header__container {
   color: #9d9d9d;
   padding-bottom: 5px;
   font-weight: 600;
-  font-family: 'Roboto';
+  font-family: dm sans, Sans-serif;
   font-size: 18px;
   line-height: 100%;
 }
@@ -580,8 +587,10 @@ body .inverted .header__container {
   top: 0;
   left: 40%;
   margin: 20px;
+  font-family: dm sans, Sans-serif;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box h1 {
+  font-family: dm sans, Sans-serif;
   color: white;
   position: absolute;
   top: 97px;
@@ -799,6 +808,7 @@ body._mobile .menu__list > li._active .menu__sub-list {
   margin-top: -3px;
   grid-area: header;
   font-size: 42px;
+  font-family: dm sans, Sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 34px;
@@ -811,10 +821,12 @@ body._mobile .menu__list > li._active .menu__sub-list {
   flex-direction: column;
 }
 .grid__container p {
+  font-family: dm sans, Sans-serif;
   font-size: 22px;
   margin-top: -3px;
 }
 .grid__container a {
+  font-family: dm sans, Sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   display: flex;
