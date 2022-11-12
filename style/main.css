@@ -870,6 +870,7 @@ footer .footer__container a {
   line-height: 2.7em;
   letter-spacing: -0.28px;
   text-transform: capitalize;
+  font-family: dm sans, Sans-serif;
 }
 footer .footer__container h4 {
   padding-bottom: 32px;
@@ -878,12 +879,12 @@ footer .footer__container h4 {
   font-weight: 600;
   text-transform: capitalize;
   line-height: 1.6em;
-  font-family: 'Roboto';
+  font-family: dm sans, Sans-serif;
 }
 footer .footer__container .paragraph__footer-p {
+  font-family: dm sans, Sans-serif;
   font-size: 14px;
   line-height: 1.6em;
-  font-family: 'Roboto';
 }
 footer .footer__container .column {
   display: flex;
@@ -937,6 +938,9 @@ footer .footer__container .subscribe__footer .subscribe__footer-input {
   border-color: #fff;
 }
 footer .footer__container .subscribe__footer .subscribe__footer-input input {
+  font-family: dm sans, Sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
   text-indent: 10px;
   width: 230%;
   border-width: 0px;
