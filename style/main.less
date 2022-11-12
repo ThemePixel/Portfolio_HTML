@@ -87,11 +87,7 @@ h1{
     margin-top: -3px;
     left: 0;
   }
-  ._mobile svg{
-    position: relative;
-    margin-bottom: 1px;
-    margin-left: 10px;
-  }
+  
   ._lock svg{
     
     z-index: 88;
@@ -1181,7 +1177,7 @@ footer{
     
         }
         h4{
-            padding-bottom: 32px;
+            padding-bottom: 40px;
             color: #FF7BE5;
             font-size: 20px;
             font-weight: 600;
@@ -1334,6 +1330,29 @@ footer{
 }
 
 
+
+
+@media only screen and (max-width: 1900px){
+    footer .footer__container{
+    padding: 64px 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 510px 210px 243px 362px 500px 230px 221px 55px 25px;
+    grid-template-areas:
+        "column__footer-one"
+        "column__footer-two"
+        "column__footer-three"
+        "column__footer-four"
+        "column__footer-five"
+        "paragraph__footer"
+        "subscribe__footer"
+        "follow__footer"
+        "copyright__footer";
+        
+    }
+    footer .footer__container .follow__footer .follow__footer-icons a {
+        padding-right: 10px;
+    }
+}    
 
 
     .svganimate__container{
