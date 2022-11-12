@@ -983,6 +983,7 @@ footer .footer__container .copyright__footer {
   grid-area: copyright__footer;
 }
 footer .footer__container .copyright__footer p {
+  font-family: dm sans, Sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.7em;
