@@ -1016,6 +1016,22 @@ footer .footer__container .copyright__footer p {
     grid-template-columns: 1fr;
     grid-template-areas: "column__footer-one" "column__footer-two" "column__footer-three" "column__footer-four" "column__footer-five" "paragraph__footer" "subscribe__footer" "follow__footer" "copyright__footer";
   }
+  .svg-icon {
+    cursor: pointer;
+    position: relative;
+    color: white;
+  }
+  .svg-icon::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 186px;
+    font-size: 1.5em;
+    transform: translateY(-100%);
+  }
+  .footer__container .column__footer-one.active .svg-icon::before {
+    content: "-";
+  }
   .footer__container .column__footer-one.active .column__footer-one-elements {
     height: 502px;
   }

@@ -1361,6 +1361,28 @@ footer{
     }
 
     
+    .svg-icon{
+        cursor: pointer;
+        position: relative;
+        color: white;
+        &::before{
+            content: "+";
+            position: absolute;
+            top: 50%;
+            right: 186px;
+            font-size: 1.5em;
+            transform: translateY(-100%);
+        }
+    }
+    .footer__container .column__footer-one.active{
+        .svg-icon{
+            &::before{
+                content: "-";
+            }
+        }
+    }
+
+
 .footer__container .column__footer-one.active .column__footer-one-elements{
     height: 502px;   
  }
@@ -1411,6 +1433,11 @@ footer{
     transition: 0.5s;
     overflow-y: auto;
 }
+
+
+
+
+
 ///////////////////////////////////////////////////////////////////////////////////
 .footer__container .paragraph__footer {
     height: 225px;   
