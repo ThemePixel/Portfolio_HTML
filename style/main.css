@@ -1066,6 +1066,18 @@ footer .footer__container .copyright__footer p {
     transition: 0.5s;
     overflow-y: auto;
   }
+  .footer__container .paragraph__footer {
+    height: 225px;
+  }
+  .footer__container .subscribe__footer {
+    height: 213px;
+  }
+  .footer__container .follow__footer {
+    height: 55px;
+  }
+  .footer__container .copyright__footer {
+    height: 26px;
+  }
   footer .footer__container {
     grid-template-rows: none;
   }
