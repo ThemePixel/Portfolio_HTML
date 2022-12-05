@@ -1014,8 +1014,20 @@ footer .footer__container .copyright__footer p {
   footer .footer__container {
     padding: 64px 24px;
     grid-template-columns: 1fr;
-    grid-template-rows: 502px 208px 241px 350px 500px 225px 213px 55px 26px;
     grid-template-areas: "column__footer-one" "column__footer-two" "column__footer-three" "column__footer-four" "column__footer-five" "paragraph__footer" "subscribe__footer" "follow__footer" "copyright__footer";
+  }
+  .footer__container .column__footer-one.active .column__footer-one-elements {
+    height: 502px;
+  }
+  .footer__container .column__footer-one .column__footer-one-elements {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+  footer .footer__container {
+    grid-template-rows: none;
   }
 }
 .svganimate__container {

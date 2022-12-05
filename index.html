@@ -304,7 +304,14 @@
               
             </div>
           </div>
-
+          <script>
+            const accordion = document.getElementsByClassName('column__footer-one');
+            for (i = 0; i<accordion.length; i++ ){
+                accordion[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+            }
+        </script>  
 
          
         <div class="paragraph__footer">
