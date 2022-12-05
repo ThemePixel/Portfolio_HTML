@@ -170,6 +170,7 @@ body .inverted {
 }
 .header.inverted .header__container .menu__body .menu__list li .menu__link {
   color: #000;
+  font-weight: 600;
 }
 body .inverted .header__container .menu__body .menu__list li .menu__sub-list::before {
   border-color: transparent transparent #222831 transparent;
