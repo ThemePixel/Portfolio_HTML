@@ -1394,7 +1394,6 @@ footer .footer__container .copyright__footer p {
   justify-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "one" "two" "three" "four";
 }
 .accordion__section .one {
@@ -1409,9 +1408,17 @@ footer .footer__container .copyright__footer p {
 .accordion__section .four {
   grid-area: four;
 }
+.accordion__section .accordion__section-description {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  background-color: #222831;
+  color: white;
+  transition: 0.5s;
+  overflow-y: auto;
+}
 .accordion__section .accordion__section-container {
   width: 800px;
-  height: 200px;
 }
 .accordion__section .accordion__section-container .accordion__section-title {
   height: 40px;
@@ -1428,16 +1435,10 @@ footer .footer__container .copyright__footer p {
   font-size: 1.5em;
   transform: translateY(-50%);
 }
-.accordion__section .accordion__section-container .accordion__section-description {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  background-color: #222831;
-  color: white;
-  transition: 0.5s;
-  overflow-y: auto;
+.accordion__section .accordion__section-container.active .accordion__section-title::before {
+  content: "-";
 }
-.accordion__section-container.active .accordion__section-description {
-  height: 150px;
+.accordion__section .accordion__section-container.active .accordion__section-description {
   padding: 10px;
+  height: 150px;
 }
