@@ -226,7 +226,7 @@ body .inverted .header__container {
   margin: 0px 0px 0px 60px;
 }
 .header .header__container .menu__body .menu__list .mega-menu_section .menu__sub-list {
-  z-index: 11;
+  z-index: 1;
 }
 .header .header__container .menu__body .menu__list .mega-menu_section .menu__sub-list .sub-list__li-tag {
   flex-direction: column;
