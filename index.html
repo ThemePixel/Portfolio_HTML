@@ -305,14 +305,38 @@
             </div>
           </div>
           <script>
-            const accordion = document.getElementsByClassName('column__footer-one');
-            for (i = 0; i<accordion.length; i++ ){
-                accordion[i].addEventListener('click', function(){
+            const accordionone = document.getElementsByClassName('column__footer-one');
+            const accordiontwo = document.getElementsByClassName('column__footer-two');
+            const accordionthree = document.getElementsByClassName('column__footer-three');
+            const accordionfour = document.getElementsByClassName('column__footer-four');
+            const accordionfive = document.getElementsByClassName('column__footer-five');
+            for (i = 0; i<accordionone.length; i++ ){
+                accordionone[i].addEventListener('click', function(){
                     this.classList.toggle('active')
                 })
             }
-        </script>  
-
+            for (i = 0; i<accordiontwo.length; i++ ){
+                accordiontwo[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+            }
+            for (i = 0; i<accordionthree.length; i++ ){
+              accordionthree[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+            }
+            for (i = 0; i<accordionfour.length; i++ ){
+              accordionfour[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+            }
+            for (i = 0; i<accordionfive.length; i++ ){
+              accordionfive[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+            }
+          </script>  
+          
          
         <div class="paragraph__footer">
           <h4 class="paragraph__footer-heading mb-4">Some Paragraph</h4>
