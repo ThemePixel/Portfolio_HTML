@@ -54,6 +54,7 @@ html, body {
 @10:#F38181;
 @11:#FCE38A;
 @12:#FF7BE5;
+@13:#92003B;
 
 html{
     box-sizing: border-box;
@@ -223,7 +224,7 @@ h1{
  }
  
  .inverted .menu__arrowfalse {
-    border-top: 10px solid rgb(0, 0, 0);
+    border-top: 10px solid @13;
  }
 //////////////////////////////////////////header inverted/////////////////////////////////////////////
 
@@ -240,7 +241,7 @@ body .inverted {
   }
   .header.inverted .header__container .menu__body .menu__list li .menu__link {
     color: #000;
-    
+    font-weight: 600;
   }
   
 
@@ -373,6 +374,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                             color: white; 
                             font-size: 18px;
                             padding: 24px 0px;
+                            
                         }
                         .menu__sub-list{
                             box-shadow: 5px 5px 0 (@2);
@@ -987,7 +989,7 @@ body._mobile .menu__list > li._active .menu__arrow{
     margin: 0px 0px 0px 10px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid white;
+    border-top: 10px solid @13;
     transition: transform 0.3s ease 0s;
 }
 .menu__arrow{
@@ -1003,7 +1005,7 @@ body._mobile .menu__arrow{
     
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid white;
+    border-top: 10px solid @13;
     transition: transform 0.3s ease 0s;
 }
 
@@ -1751,7 +1753,7 @@ footer .footer__container{
 
 
        ._lock .inverted .menu__arrowfalse {
-        border-top: 10px solid #f7f7f7;
+        border-top: 10px solid @13;
        }
    
    .inverted .menu__icon::before{

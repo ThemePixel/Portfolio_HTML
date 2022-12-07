@@ -166,7 +166,7 @@ svg .draw {
   background-color: #000000;
 }
 .inverted .menu__arrowfalse {
-  border-top: 10px solid #000000;
+  border-top: 10px solid #92003B;
 }
 body .inverted {
   background-color: #e3fdfd80;
@@ -178,6 +178,7 @@ body .inverted {
 }
 .header.inverted .header__container .menu__body .menu__list li .menu__link {
   color: #000;
+  font-weight: 600;
 }
 body .inverted .header__container .menu__body .menu__list li .menu__sub-list::before {
   border-color: transparent transparent #222831 transparent;
@@ -741,7 +742,7 @@ body._mobile .menu__list > li._active .menu__arrow {
   margin: 0px 0px 0px 10px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid white;
+  border-top: 10px solid #92003B;
   transition: transform 0.3s ease 0s;
 }
 .menu__arrow {
@@ -755,7 +756,7 @@ body._mobile .menu__arrow {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid white;
+  border-top: 10px solid #92003B;
   transition: transform 0.3s ease 0s;
 }
 body._mobile .menu__arrowfalse {
@@ -1293,7 +1294,7 @@ footer .footer__container .copyright__footer p {
     margin-top: -28px;
   }
   ._lock .inverted .menu__arrowfalse {
-    border-top: 10px solid #f7f7f7;
+    border-top: 10px solid #92003B;
   }
   .inverted .menu__icon::before {
     background-color: #000;
