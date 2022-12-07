@@ -138,37 +138,60 @@
           <h2>My previous recent works:</h2>
             <h1>Lazy Loading Images with JavaScript Intersection Observer +<br>
             Reveal Elements On Scroll JavaScript Intersection Observer</h1>
-          <div class="loading-lazy__ul">
-            <div id="container" class="loading-lazy__li one ">
-              <a href="https://themepixel.github.io/PSDtoHTML.WITH.LESS.CSS.EXOTICO./"><img class="imglazy" data-src="img/psd_slide.jpg" src="img/1x1.png" alt="some-image"></a>
-            </div >
-            <div id="container" class="loading-lazy__li two ">
-              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/portfolio.jpg" src="img/1x1.png" alt="some-image"></a>
-            </div >
-            <div id="container" class="loading-lazy__li three">
-              <a href="https://themepixel.github.io/PSDtoHTML.WITH.LESS.CSS.EXOTICO./"><img class="imglazy" data-src="img/invok.jpg" src="img/1x1.png" alt="some-image"></a>
-            </div >
-            <div id="container" class="loading-lazy__li four ">
-              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/menu.jpg" src="img/1x1.png" alt="some-image"></a>
-            </div >
-            <div id="container" class="loading-lazy__li five ">
-              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/menuu.jpg" src="img/1x1.png" alt="some-image"></a>
-            </div >
-            <div id="container" class="loading-lazy__li six ">
-              <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/por men.jpg" src="img/1x1.png" alt="some-image"></a>
-            </div >
             
-          </div >
+              <div class="loading-lazy__ul">
+
+                <div class="loading-lazy-hide">
+                  <div id="container" class="loading-lazy__li one ">
+                    <a href="https://themepixel.github.io/PSDtoHTML.WITH.LESS.CSS.EXOTICO./"><img class="imglazy" data-src="img/psd_slide.jpg" src="img/1x1.png" alt="some-image"></a>
+                  </div >
+                </div>
+
+
+                <div class="loading-lazy-hide">
+                  <div id="container" class="loading-lazy__li two ">
+                    <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/portfolio.jpg" src="img/1x1.png" alt="some-image"></a>
+                  </div >
+                </div>
+
+                <div class="loading-lazy-hide">
+                  <div id="container" class="loading-lazy__li three">
+                    <a href="https://themepixel.github.io/PSDtoHTML.WITH.LESS.CSS.EXOTICO./"><img class="imglazy" data-src="img/invok.jpg" src="img/1x1.png" alt="some-image"></a>
+                  </div >
+                </div>
+
+                <div class="loading-lazy-hide">
+                  <div id="container" class="loading-lazy__li four ">
+                    <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/menu.jpg" src="img/1x1.png" alt="some-image"></a>
+                  </div >
+                </div>
+
+                <div class="loading-lazy-hide">
+                  <div id="container" class="loading-lazy__li five ">
+                    <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/menuu.jpg" src="img/1x1.png" alt="some-image"></a>
+                  </div >
+                </div>
+
+                <div class="loading-lazy-hide">
+                  <div id="container" class="loading-lazy__li six ">
+                    <a href="https://themepixel.github.io/Portfolio_HTML/"><img class="imglazy" data-src="img/por men.jpg" src="img/1x1.png" alt="some-image"></a>
+                  </div >
+                </div>
+
+              </div >
+            
+
+          <div id="load__more-button">Load more</div>
         </div>
       </div>
-      <div id="load-more">Load more</div>
+      
       <script>
 
-        let loadMoreBtn = document.querySelector('#load-more');
+        let loadMoreBtn = document.querySelector('#load__more-button');
         let currentItem = 3;
         
         loadMoreBtn.onclick = () =>{
-           let boxes = [...document.querySelectorAll('.container .box-container .box')];
+           let boxes = [...document.querySelectorAll('.loading-lazy__box .loading-lazy__ul .loading-lazy-hide')];
            for (var i = currentItem; i < currentItem + 3; i++){
               boxes[i].style.display = 'inline-block';
            }

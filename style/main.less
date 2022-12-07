@@ -764,7 +764,9 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
 
 //////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
 
-.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li.element-show{
+
+
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li.element-show{
 
     opacity: 1;
     transform: translateX(0);
@@ -804,117 +806,147 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                 top: 97px;
                 left: 20px;;
             }
-            .loading-lazy__ul{
-                padding-top: 60px;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr; 
-                row-gap: 20px;
-                column-gap: 20px;  
-                grid-template-areas: 
-                    "one two three "
-                    "four five six ";
-
-
-                .one{
-                    grid-area: one;
-                   
-                }
-                .two{
-                    grid-area: two;
-                   
-                }
-                .three{
-                    grid-area: three;
+            
+                .loading-lazy__ul{
+                    padding-top: 60px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr; 
+                    row-gap: 20px;
+                    column-gap: 20px;  
                     
-                }
-                .four{
-                    grid-area: four;
-                    
-                }
-                .five{
-                    grid-area: five;
-                  
-                }
-                .six{
-                    grid-area: six;
-                    
-                }
-                
-                .loading-lazy__li{
-                    
-                    background: url("../img/logo.gif") center / 50px no-repeat;
-                    box-shadow: 0 0 8px rgb(0 0 0);
-                    width: 607px;
-                    height: 360px;
-                    border: 2px solid @9;
-                    opacity: 0;
-                    transform: translateX(100px);    
-                    transition: 1800ms ;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                    grid-template-areas: 
+                        "one two three "
+                        "four five six ";
+    
+    
+                    .one{
+                        grid-area: one;
+                       
+                    }
+                    .two{
+                        grid-area: two;
+                       
+                    }
+                    .three{
+                        grid-area: three;
                         
                     }
-                    &:last-child{
-                        margin: 0;
+                    .four{
+                        grid-area: four;
+                        
                     }
+                    .five{
+                        grid-area: five;
+                      
+                    }
+                    .six{
+                        grid-area: six;
+                        
+                    }
+                    .loading-lazy-hide{
+                        display: none;
+                        .loading-lazy__li{
+                        
+                            background: url("../img/logo.gif") center / 50px no-repeat;
+                            box-shadow: 0 0 8px rgb(0 0 0);
+                            width: 607px;
+                            height: 360px;
+                            border: 2px solid @9;
+                            opacity: 0;
+                            transform: translateX(100px);    
+                            transition: 1800ms ;
+                            
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                
+                            }
+                            &:last-child{
+                                margin: 0;
+                            }
+                        }
+                    }
+                    
+    
+                }
+            }
+
+            #load__more-button{
+                text-transform: capitalize;
+                border:1px solid #222831;
+                color:#222831;
+                font-size: 16px;
+                background-color: #fff;
+                cursor: pointer;
+                margin: 0 auto;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 140px;
+                margin-top: 20px;
+                &:hover{
+                    background-color: #92003B;
+                    border-color: #92003B;
+                    color:#fff;
                 }
             }
         }
     }
-}
 
-@media only screen and (max-width: 1900px){
-    .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul{
-        padding-top: 60px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        row-gap: 5px;
-        column-gap: 5px;
-        grid-template-areas:
-            "one "
-            "two "
-            "three "
-            "four "
-            "five "
-            "six";
-        }
-        .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy__li{
-            height: 350px;
-            width: 100%;
-        }
-        .loading-lazy__section .loading-lazy__container .loading-lazy__box{
-            padding: 77px 5px 5px 5px;
-        }
-        .loading-lazy__section .loading-lazy__container .loading-lazy__box h2{
-            font-size: 22px;
-            left: 0;
-            margin: 10px;
-            color: @12;
-            font-size: 20px;
-            font-weight: 600;
-            text-transform: capitalize;
-            line-height: 1.6em;
-            font-family: dm sans, Sans-serif;
-        }
-        .loading-lazy__section .loading-lazy__container .loading-lazy__box h1{
-            top: 62px;
-            left: 10px;
-            font-family: roboto;
-            font-size: 14px;
-            line-height: 1.6em;
-            padding-right: 10px;
-        }
-        .swiper-slider{
-            margin: 5px 0px 5px 0px;
-        }
-        .loading-lazy__section {
-            margin-bottom: 5px;
-        }
-}
+
+    @media only screen and (max-width: 1900px){
+        .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul{
+            padding-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 5px;
+            column-gap: 5px;
+            grid-template-areas:
+                "one "
+                "two "
+                "three "
+                "four "
+                "five "
+                "six";
+            }
+            .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li{
+                height: 350px;
+                width: 100%;
+            }
+            .loading-lazy__section .loading-lazy__container .loading-lazy__box{
+                padding: 77px 5px 5px 5px;
+            }
+            .loading-lazy__section .loading-lazy__container .loading-lazy__box h2{
+                font-size: 22px;
+                left: 0;
+                margin: 10px;
+                color: @12;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: capitalize;
+                line-height: 1.6em;
+                font-family: dm sans, Sans-serif;
+            }
+            .loading-lazy__section .loading-lazy__container .loading-lazy__box h1{
+                top: 62px;
+                left: 10px;
+                font-family: roboto;
+                font-size: 14px;
+                line-height: 1.6em;
+                padding-right: 10px;
+            }
+            .swiper-slider{
+                margin: 5px 0px 5px 0px;
+            }
+            .loading-lazy__section {
+                margin-bottom: 5px;
+            }
+    }
 //////////////////////////////////////Lazy Loading Images with JavaScript Intersection Observer///////////////////////////////////////////////////////
 
 
