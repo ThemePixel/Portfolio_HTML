@@ -607,7 +607,7 @@ body .inverted .header__container {
   left: 20px;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
-  padding-top: 60px;
+  padding-top: 90px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -635,6 +635,11 @@ body .inverted .header__container {
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide {
   display: none;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide:nth-child(1),
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide:nth-child(2),
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide:nth-child(3) {
+  display: inline-block;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li {
   background: url("../img/logo.gif") center / 50px no-repeat;
@@ -668,7 +673,7 @@ body .inverted .header__container {
   align-items: center;
   height: 50px;
   width: 140px;
-  margin-top: 20px;
+  margin-top: -357px;
 }
 .loading-lazy__section .loading-lazy__container #load__more-button:hover {
   background-color: #92003B;

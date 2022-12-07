@@ -808,7 +808,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
             }
             
                 .loading-lazy__ul{
-                    padding-top: 60px;
+                    padding-top: 90px;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-template-rows: 1fr 1fr; 
@@ -845,7 +845,12 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                         
                     }
                     .loading-lazy-hide{
-                        display: none;
+                        display: none;            
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3){
+                            display: inline-block;
+                        }
                         .loading-lazy__li{
                         
                             background: url("../img/logo.gif") center / 50px no-repeat;
@@ -887,7 +892,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                 align-items: center;
                 height: 50px;
                 width: 140px;
-                margin-top: 20px;
+                margin-top: -357px;
                 &:hover{
                     background-color: #92003B;
                     border-color: #92003B;
