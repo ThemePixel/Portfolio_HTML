@@ -159,6 +159,9 @@ svg .draw {
   display: flex;
   margin-top: 5px;
 }
+.menu__list li:nth-child(4) a:after {
+  background-color: #92003B;
+}
 .menu__link:hover::after {
   transform: scaleX(1);
 }
