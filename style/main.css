@@ -1241,6 +1241,7 @@ footer .footer__container .copyright__footer p {
   }
   ._lock .header .header__container .header__logo .logo__text {
     color: #000;
+    font-weight: 600;
   }
   ._lock .menu__icon::before {
     background-color: black;
