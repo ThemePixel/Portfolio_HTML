@@ -605,6 +605,7 @@ body .inverted .header__container {
   position: absolute;
   top: 97px;
   left: 20px;
+  line-height: 20px;
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
   padding-top: 90px;
@@ -681,8 +682,12 @@ body .inverted .header__container {
   color: #fff;
 }
 @media only screen and (max-width: 1900px) {
+  .loading-lazy__section .loading-lazy__container #load__more-button {
+    margin-top: -1044px;
+    margin-bottom: 15px;
+  }
   .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
-    padding-top: 60px;
+    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
