@@ -661,11 +661,11 @@ body .inverted .header__container {
   margin: 0;
 }
 .loading-lazy__section .loading-lazy__container #load__more-button {
+  background-color: #FF7BE5;
   text-transform: capitalize;
-  border: 1px solid #222831;
-  color: #222831;
+  border: 1px solid #FF7BE5;
+  color: #92003B;
   font-size: 16px;
-  background-color: #fff;
   cursor: pointer;
   margin: 0 auto;
   text-align: center;
@@ -677,9 +677,9 @@ body .inverted .header__container {
   margin-top: -357px;
 }
 .loading-lazy__section .loading-lazy__container #load__more-button:hover {
-  background-color: #92003B;
-  border-color: #92003B;
-  color: #fff;
+  background-color: #F9ADEA;
+  border-color: #F9ADEA;
+  color: #92003B;
 }
 @media only screen and (max-width: 1900px) {
   footer {
