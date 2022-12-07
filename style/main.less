@@ -20,8 +20,8 @@
          url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
   }
-  @font-face { src: url("../fonts/assassin.woff2") format("woff2"); font-family: "assassin-st"; font-weight: 700; font-style: italic; }
-  @font-face { src: url("../fonts/DMSans-Regular.woff2") format("woff2"); font-family: "dm sans"; font-weight: 400; font-style: Sans-serif; }
+  @font-face { src: url("../style/fonts/assassin.woff2") format("woff2"); font-family: "assassin-st"; font-weight: 700; font-style: italic; }
+  @font-face { src: url("../style/fonts/DMSans-Regular.woff2") format("woff2"); font-family: "dm sans"; font-weight: 400; font-style: Sans-serif; }
   :root {
 	--accent: #CC8869;
 	--padding: 120px;
@@ -1637,7 +1637,7 @@ footer .footer__container{
         }
         .menu__sub-list{
             
-            transform: translate(-159px, 45%);
+            
             opacity: 0;
             visibility: hidden;
             transition: all 0.4s ease 0s;
@@ -2192,6 +2192,23 @@ body .footer__container .paragraph__section{
     }
 }
 
+@media only screen and (max-width: 500px){
+    .load_more_button-container .load_more_button-title{
+        font-size: 25px;
+    }
+    .load_more_button-container .load_more_button-boxes{
+        grid-template-columns: 1fr;
+    }
+    .load_more_button-container .load_more_button-boxes .load_more_button-box .load_more_button-image{
+        height: 200px;
+    }
+    .load_more_button-container .load_more_button-boxes .load_more_button-box .load_more_button-content p{
+        font-size: 12px;
+    }
+    .load_more_button-container .load_more_button-boxes .load_more_button-box .load_more_button-content .load_more_button-icons span{
+        font-size: 12px;
+    }
+}
 
 ///////////////////////////////////////load_more_button///////////////////////////////////////////////////
 
