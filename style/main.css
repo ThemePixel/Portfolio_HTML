@@ -593,7 +593,7 @@ body .inverted .header__container {
 .loading-lazy__section .loading-lazy__container .loading-lazy__box h2 {
   position: absolute;
   font-size: 32px;
-  color: white;
+  color: #F9ADEA;
   top: 0;
   left: 40%;
   margin: 20px;
@@ -675,6 +675,7 @@ body .inverted .header__container {
   height: 50px;
   width: 140px;
   margin-top: -357px;
+  font-family: 'dm sans';
 }
 .loading-lazy__section .loading-lazy__container #load__more-button:hover {
   background-color: #F9ADEA;
