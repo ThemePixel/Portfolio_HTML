@@ -814,39 +814,8 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                     padding-top: 90px;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
-                    grid-template-rows: 1fr 1fr; 
-                    row-gap: 20px;
-                    column-gap: 20px;  
-                    
-                    grid-template-areas: 
-                        "one two three "
-                        "four five six ";
-    
-    
-                    .one{
-                        grid-area: one;
-                       
-                    }
-                    .two{
-                        grid-area: two;
-                       
-                    }
-                    .three{
-                        grid-area: three;
-                        
-                    }
-                    .four{
-                        grid-area: four;
-                        
-                    }
-                    .five{
-                        grid-area: five;
-                      
-                    }
-                    .six{
-                        grid-area: six;
-                        
-                    }
+                    grid-template-rows: 1fr; 
+                    gap: 20px;
                     .loading-lazy-hide{
                         display: none;            
                         &:nth-child(1),
@@ -895,7 +864,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                 align-items: center;
                 height: 50px;
                 width: 140px;
-                margin-top: -357px;
+                margin-top: 25px;
                 font-family: 'dm sans';
                 &:hover{
                     background-color: #F9ADEA;
@@ -914,7 +883,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
         }
 
         .loading-lazy__section .loading-lazy__container #load__more-button{
-            margin-top: -1044px;
+            margin-top: 15px;
             margin-bottom: 15px;
         }
 
@@ -922,17 +891,10 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
             padding-top: 80px;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            //grid-template-rows: 1fr;
             row-gap: 5px;
             column-gap: 5px;
-            grid-template-areas:
-                "one "
-                "two "
-                "three "
-                "four "
-                "five "
-                "six";
-            }
+        }
             .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li{
                 height: 350px;
                 width: 100%;
