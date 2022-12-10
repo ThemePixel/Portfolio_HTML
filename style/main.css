@@ -663,9 +663,6 @@ body .inverted .header__container {
   color: #92003B;
 }
 @media only screen and (max-width: 1900px) {
-  footer {
-    margin-top: -5px;
-  }
   .loading-lazy__section .loading-lazy__container #load__more-button {
     margin-top: 20px;
     margin-bottom: 15px;
@@ -894,7 +891,6 @@ body._mobile .menu__list > li._active .menu__sub-list {
   color: #ffffff;
 }
 footer {
-  margin-top: -20px;
   background-color: #92003B;
   overflow: hidden;
 }
@@ -1570,7 +1566,7 @@ footer .footer__container .copyright__footer p {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding: 25px 20px;
+  padding: 20px 20px;
 }
 .load_more_button-container .load_more_button-title {
   text-transform: capitalize;
@@ -1649,7 +1645,6 @@ footer .footer__container .copyright__footer p {
 .load_more_button-container #load-more {
   text-transform: capitalize;
   margin-top: 20px;
-  margin-bottom: 15px;
   display: inline-block;
   padding: 13px 30px;
   border: 1px solid #222831;
@@ -1664,6 +1659,15 @@ footer .footer__container .copyright__footer p {
   color: #fff;
 }
 @media only screen and (max-width: 500px) {
+  .load_more_button-container {
+    padding: 23px 20px;
+  }
+  footer {
+    margin-top: -5px;
+  }
+  .load_more_button-container #load-more {
+    margin-bottom: 0;
+  }
   .load_more_button-container .load_more_button-title {
     font-size: 25px;
   }
