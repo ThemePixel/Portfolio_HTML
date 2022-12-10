@@ -1740,8 +1740,6 @@ footer .footer__container .copyright__footer p {
 }
 .tabs_section-container .tabs_section_buttom-content {
   padding-right: 1px;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 20px 25px -5px rgba(0 0 0 / 0.1), 0 10px 10px -5px rgba(0 0 0 / 0.04), 0 35px 2px -20px rgba(231 231 239 / 1);
 }
 .tabs_section-container .tabs_section_buttom-content .tabs_section_buttom-box {
   display: flex;
