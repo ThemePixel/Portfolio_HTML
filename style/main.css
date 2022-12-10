@@ -1711,14 +1711,14 @@ footer .footer__container .copyright__footer p {
   cursor: pointer;
   color: #F9ADEA;
 }
-.tabs_section-container .tabs_section-ul .tabs_section-li:active {
+.tabs_section-container .tabs_section-ul .tabs_section-li.active {
   background-color: white;
   border-bottom-color: white;
   border-left-color: white;
   border-right-color: white;
   color: #FF7BE5;
 }
-.tabs_section-container .tabs_section-ul .tabs_section-li:active img {
+.tabs_section-container .tabs_section-ul .tabs_section-li.active img {
   filter: none;
 }
 .tabs_section-container .tabs_section-ul .tabs_section-li:hover {
@@ -1766,14 +1766,4 @@ footer .footer__container .copyright__footer p {
 .tabs_section-container .tabs_section_buttom-content .tabs_section_buttom-box .text p {
   color: #222831;
   line-height: 1.8;
-}
-.tabs_section-container .tabs_section-ul .tabs_section-li.active {
-  background-color: white;
-  border-bottom-color: white;
-  border-left-color: white;
-  border-right-color: white;
-  color: #FF7BE5;
-}
-.tabs_section-container .tabs_section-ul .tabs_section-li.active img {
-  filter: none;
 }
