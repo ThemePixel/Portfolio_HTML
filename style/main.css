@@ -671,7 +671,7 @@ body .inverted .header__container {
     margin-bottom: 15px;
   }
   .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul {
-    padding-top: 80px;
+    padding-top: 120px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 5px;
