@@ -29,7 +29,7 @@
 }
 
 html, body {
-    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    
     overflow-x: hidden;
     
     background-color: @9;
@@ -304,8 +304,16 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
 ///////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////
 //////////////////////////////////////////////////////////
-    
+body .header__img .header__img-container {
+    background: url(../img/image__one.jpg) no-repeat 50% -190px / cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}  
 @media only screen and (max-width: 314px){
+ 
     .header__container{
         flex-direction: column;
     } 
@@ -423,7 +431,7 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
         }
     }
 
-//////////////////////////////////////3d slider with swiper slider///////////////////////////////////////////////////////
+
 .header__img{
     width: 100vw;
     height: 103vh;
@@ -768,14 +776,6 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
 
 
 
-.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li.element-show{
-
-    opacity: 1;
-    transform: translateX(0);
-    
-    
-}
-
 .loading-lazy__section{
    position: relative;
     
@@ -834,7 +834,10 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                             opacity: 0;
                             transform: translateX(100px);    
                             transition: 1800ms ;
-                            
+                            &.element-show{
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
                             img{
                                 width: 100%;
                                 height: 100%;
@@ -846,8 +849,6 @@ body .inverted .header__container .menu__body .menu__list li .menu__sub-list::be
                             }
                         }
                     }
-                    
-    
                 }
             }
 
@@ -2049,7 +2050,6 @@ body .footer__container .paragraph__section{
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr;
-    //grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "one"
     "two"
@@ -2079,6 +2079,18 @@ body .footer__container .paragraph__section{
 }
     .accordion__section-container{
         width: 800px;
+        &.active{
+            .accordion__section-title{
+                &::before{
+                    content: "-";
+                    
+                }
+            }
+            .accordion__section-description{
+                padding: 10px;
+                height: 150px;
+            }
+        }
         
         .accordion__section-title{
             height: 40px;
@@ -2099,17 +2111,8 @@ body .footer__container .paragraph__section{
        
     }
 }
-.accordion__section .accordion__section-container.active .accordion__section-title{
-    &::before{
-        content: "-";
-        
-    }
-}
-.accordion__section .accordion__section-container.active .accordion__section-description{
-    padding: 10px;
-    height: 150px;
 
-}
+
 
 
 ///////////////////////////////////////load_more_button///////////////////////////////////////////////////

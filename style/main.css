@@ -34,7 +34,6 @@
 }
 html,
 body {
-  /* Убирает прокрутку по горизонтале, для мобильной версии */
   overflow-x: hidden;
   background-color: #F08A5D;
 }
@@ -195,6 +194,14 @@ body .inverted .header__container {
 ._pc.scroll-down header {
   transform: translate3d(0, -100%, 0);
   transition: 0.3s all;
+}
+body .header__img .header__img-container {
+  background: url(../img/image__one.jpg) no-repeat 50% -190px / cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 @media only screen and (max-width: 314px) {
   .header__container {
@@ -573,10 +580,6 @@ body .inverted .header__container {
     transform: rotateY(1deg) scaleX(0.92);
   }
 }
-.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li.element-show {
-  opacity: 1;
-  transform: translateX(0);
-}
 .loading-lazy__section {
   position: relative;
 }
@@ -630,6 +633,10 @@ body .inverted .header__container {
   opacity: 0;
   transform: translateX(100px);
   transition: 1800ms ;
+}
+.loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li.element-show {
+  opacity: 1;
+  transform: translateX(0);
 }
 .loading-lazy__section .loading-lazy__container .loading-lazy__box .loading-lazy__ul .loading-lazy-hide .loading-lazy__li img {
   width: 100%;
@@ -1539,6 +1546,13 @@ footer .footer__container .copyright__footer p {
 .accordion__section .accordion__section-container {
   width: 800px;
 }
+.accordion__section .accordion__section-container.active .accordion__section-title::before {
+  content: "-";
+}
+.accordion__section .accordion__section-container.active .accordion__section-description {
+  padding: 10px;
+  height: 150px;
+}
 .accordion__section .accordion__section-container .accordion__section-title {
   height: 40px;
   cursor: pointer;
@@ -1553,13 +1567,6 @@ footer .footer__container .copyright__footer p {
   right: 20px;
   font-size: 1.5em;
   transform: translateY(-50%);
-}
-.accordion__section .accordion__section-container.active .accordion__section-title::before {
-  content: "-";
-}
-.accordion__section .accordion__section-container.active .accordion__section-description {
-  padding: 10px;
-  height: 150px;
 }
 .load_more_button-container {
   max-width: 1200px;
