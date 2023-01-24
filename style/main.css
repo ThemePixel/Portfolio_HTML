@@ -103,7 +103,7 @@ h1 {
 .inverted .logo__text::after {
   content: '';
   width: 86px
-  height: 2px;
+    height: 2px;
   background-color: black;
   position: absolute;
   left: 0;
@@ -112,7 +112,6 @@ h1 {
   transform-origin: left;
   transition: transform 0.5s ease;
 }
-
 .inverted .logo__text:hover::after {
   transform: scaleX(1);
 }
@@ -869,10 +868,22 @@ body .inverted .header__container {
     padding-right: 10px;
   }
   .swiper-slider {
-    margin-top: 65px;
+    margin: 0;
+    margin-top: 178px;
+    width: 100%;
+    height: 100%;
   }
   .loading-lazy__section {
     margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 1900px) {
+  .tab-slider__section .tab-slider-navbar {
+    position: relative;
+    margin: -1007px 12px 38px 6px;
+    z-index: 66;
+    opacity: 0.7;
+    max-width: 928px;
   }
 }
 .elements__section-grid {
