@@ -315,7 +315,7 @@ const tab_Nav = function(tabBtnClick){
     tabcontenttab[tabBtnClick].classList.add("active");
 
 
-
+}
 
     tabsliderbtn.forEach((tabBtn, i) => {
         tabBtn.addEventListener("click", () => {
@@ -323,4 +323,4 @@ const tab_Nav = function(tabBtnClick){
         });
     });
 
-}
+

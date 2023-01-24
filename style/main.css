@@ -103,7 +103,7 @@ h1 {
 .inverted .logo__text::after {
   content: '';
   width: 86px
-    height: 2px;
+  height: 2px;
   background-color: black;
   position: absolute;
   left: 0;
@@ -112,6 +112,7 @@ h1 {
   transform-origin: left;
   transition: transform 0.5s ease;
 }
+
 .inverted .logo__text:hover::after {
   transform: scaleX(1);
 }
