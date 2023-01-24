@@ -32,11 +32,6 @@
   --padding: 120px;
   --transition: cubic-bezier(0.4, 0, 0, 1);
 }
-html,
-body {
-  overflow-x: hidden;
-  background-color: #F08A5D;
-}
 html {
   box-sizing: border-box;
 }
